@@ -1,0 +1,692 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>动漫俱乐部</title>
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="font/bootstrap-icons.css" />
+    <style>
+        .carousel-inner img {
+            width: 100%;
+            height: 100%;
+        }
+        
+        .first ul li {
+            margin-bottom: 10px;
+        }
+        
+        body a {
+            text-decoration: none !important;
+        }
+        
+        #btn2 {
+            display: none;
+        }
+        #nav li a{
+        	font-family:collegiate-normal;
+        }
+        #nav li a:hover{
+        	color:deepskyblue !important;
+        }
+        .dropdown-menu{
+        	left: auto !important;
+        	right: 0 !important;
+        }
+    </style>
+</head>
+
+<body class="bg-light ">
+
+    <div>
+        <!--
+            	作者：3113848820@qq.com
+            	时间：2021-10-23
+            	描述：导航栏
+            -->
+        <div>
+            <nav class="navbar navbar-expand-lg bg-secondary">
+                <div class=" mr-4 ">
+                    <a href="#" class="shadow rounded"><img src="img/logo.jpg" style="width:200px;height: 60px;" /></a>
+                </div>
+
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+						<span class="bi-activity"></span>
+				</button>
+                <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                    <ul class="navbar-nav ml-5  w-100" id="nav">
+                        <li class="nav-item mr-3">
+                            <a class="nav-link text-white" href="index.html"><i class="bi-house"></i>首页 </a>
+                        </li>
+                        <li class="nav-item mr-3 dropdown">
+                            <a class="nav-link text-white" data-toggle="dropdown" href="#">动漫资源</a>
+                            <div class="dropdown-menu dropdown-menu-right">
+                                <a class="dropdown-item" href="source.html">番剧索引</a>
+                                <a class="dropdown-item" href="#">连载动画</a>
+                                <a class="dropdown-item" href="#">完结动画</a>
+                                <a class="dropdown-item" href="#">资讯</a>
+                            </div>
+                        </li>
+                        <li class="nav-item mr-3 dropdown">
+                            <a class="nav-link  text-white" data-toggle="dropdown" href="#">动漫人物</a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="#">中国动漫角色</a>
+                                <a class="dropdown-item" href="#">日韩动漫角色</a>
+                                <a class="dropdown-item" href="#">欧美动漫角色</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link  text-white" data-toggle="dropdown" href="#">动漫制作</a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="#">Link 1</a>
+                                <a class="dropdown-item" href="#">Link 2</a>
+                                <a class="dropdown-item" href="#">Link 3</a>
+                            </div>
+                        </li>
+                        
+                        <li class="nav-item d-flex ml-auto">
+                            <a class="nav-link  text-white" href="#" data-toggle="modal" data-target="#myModal">登录</a>
+                        </li>
+                        <div class="modal fade " id="myModal">
+                            <div class="modal-dialog d-none d-lg-block">
+                                <div class="modal-content">
+                                    <!-- 模态框主体 -->
+                                    <div class="px-3">
+                                        <button type="button" class="close " data-dismiss="modal">&times;</button>
+                                    </div>
+                                    <div class="modal-body w-75 mx-auto">
+                                        <!-- Nav tabs -->
+                                        <div>
+                                            <ul class="nav nav-tabs">
+                                                <li class="nav-item">
+                                                    <a class="nav-link active" data-toggle="tab" href="#home1">账号登陆</a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a class="nav-link" data-toggle="tab" href="#home2">短信登陆</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <!-- Tab panes -->
+                                        <div class="tab-content" style="height:150px;">
+                                            <div class="tab-pane active" id="home1">
+                                                <form class="mt-3">
+                                                    <div class="form-group pb-3">
+                                                        <input type="text" class="form-control" placeholder="账号/用户名/邮箱" />
+                                                    </div>
+                                                    <div class="form-group pb-3 position-relative">
+                                                        <input type="password" class="form-control" placeholder="密码" />
+                                                        <a class="position-absolute" href="#" style="top: 50px;left: 240px;">忘记密码？</a>
+                                                    </div>
+
+                                                </form>
+                                            </div>
+                                            <div class="tab-pane" id="home2">
+                                                <form class="mt-3">
+                                                    <div class="input-group pb-4">
+                                                        <div class="input-group-prepend">
+                                                            <select class="form-control">
+																	<option>中国大陆</option>
+																	<option>欧美</option>
+																	<option>俄罗斯</option>
+																	<option>意大利</option>
+																	<option>澳大利亚</option>
+																</select>
+                                                        </div>
+                                                        <input type="text" class="form-control" placeholder="手机号">
+                                                    </div>
+                                                    <div class="input-group pb-3">
+                                                        <input type="text" class="form-control" placeholder="验证码">
+                                                        <div class="input-group-append">
+                                                            <span class="input-group-text">发送验证码</span>
+                                                        </div>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer justify-content-between">
+                                        <div>
+                                            <a href="" class="mr-lg-1 text-black-50 small">
+                                                <img src="https://passport.baidu.com/passApi/img/bd-acc-qzone.png" style="width: 30px;height: 30px;" /> qq登录
+                                            </a>
+                                            <a href="" class="text-black-50 small">
+                                                <img src="https://passport.baidu.com/passApi/img/bd-acc-weixin.png" style="width: 30px;height: 30px;" /> 微信login
+                                            </a>
+                                        </div>
+                                        <div class="d-flex justify-content-between">
+                                            <button type="submit" class="btn btn-primary form-control mr-1">登录</button>
+                                            <button class="btn btn-secondary form-control " data-dismiss="modal">关闭</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <li class="nav-item ">
+                            <a class="nav-link  text-white " href="login.html" data-toggle="tooltip" data-placement="bottom" title="欢迎加入我们！">注册 </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link font-size-3 ">关于<i class="bi-question-circle-fill "></i></a>
+                        </li>
+                        <li class="nav-item mx-3">
+                        	<button class=" btn bg-info w-100 text-white px-4">投稿</button>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <!--
+            	作者：3113848820@qq.com
+            	时间：2021-10-23
+            	描述：内容部分
+           -->
+        <div class="container-fluid mt-2 flex justify-content-between ">
+            <div class="row ">
+                <!--内容左侧部分-->
+                <div class="col-2 ">
+                    <div class="mx-auto p-2 bg-white h-100 ">
+                        <div>
+                            <img src="img/2.jpg " class="img-thumbnail img-fluid border-warning border-3 " style="width:100%; height: 80px; " />
+                        </div>
+                        <div class="first mt-3 ">
+                            <ul class="navbar-nav ml-4 ">
+                                <li class="nav-item ">
+                                    <a class="nav-link text-black-50 " href="user.html "><i
+												class="bi-funnel-fill mr-2 "></i>个人界面</a>
+                                </li>
+                                <li class="nav-item ">
+                                    <a class="nav-link text-black-50 " href="# "><i
+												class="bi-pencil-fill mr-2 "></i>动漫评论</a>
+                                </li>
+                                <li class="nav-item ">
+                                    <a class="nav-link text-black-50 " href="# "><i
+												class="bi-stack mr-2 "></i>动漫资讯</a>
+                                </li>
+                                <li class="nav-item ">
+                                    <a class="nav-link text-black-50 " href="# "><i
+												class="bi-columns mr-2 "></i>动画旋转</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+                <!--内容中间部分-->
+                <div class="col-8 ">
+                    <div id="demo" class="carousel slide " data-ride="carousel">
+
+                        <!-- 指示符 -->
+                        <ul class="carousel-indicators ">
+                            <li data-target="#demo " data-slide-to="0 " class="active "></li>
+                            <li data-target="#demo " data-slide-to="1 "></li>
+                            <li data-target="#demo " data-slide-to="2 "></li>
+                            <li data-target="#demo " data-slide-to="3 "></li>
+                        </ul>
+
+                        <!-- 轮播图片 -->
+                        <div class="carousel-inner ">
+                            <div class="carousel-item active ">
+                                <img src="img/q1.png ">
+                            </div>
+                            <div class="carousel-item ">
+                                <img src="img/q2.png ">
+                            </div>
+                            <div class="carousel-item ">
+                                <img src="img/q3.png ">
+                            </div>
+                            <div class="carousel-item ">
+                                <img src="img/q4.png ">
+                            </div>
+                        </div>
+
+                        <!-- 左右切换按钮 -->
+                        <a class="carousel-control-prev " href="#demo" data-slide="prev">
+                            <span class="carousel-control-prev-icon "></span>
+                        </a>
+                        <a class="carousel-control-next " href="#demo" data-slide="next">
+                            <span class="carousel-control-next-icon "></span>
+                        </a>
+                    </div>
+                    <!--
+                        	作者：3113848820@qq.com
+                        	时间：2021-10-23
+                        	描述：轮番图下的内容
+                        -->
+                    <div class="mt-2 ">
+                        <div class="p-2 bg-white ">
+                            <div class="d-flex justify-content-between ">
+                                <div class="mb-4 border-bottom border-primary text-center d-flex " style="width: 100px; ">
+                                    <h5 class="mx-auto ">热门推荐</h5>
+                                </div>
+                                <span class=" "><a href="source.html" class="text-black-50">更多 <i class="bi-caret-right"></i></a></span>
+                            </div>
+
+                            <div class="row ">
+                                <div class="col-3 ">
+                                    <a href="#demo ">
+                                        <div class="text-center "><img src="img/c1.jpg " class="mx-auto img-fluid " /></div>
+                                        <div class="text-center p-2 text-dark ">斗罗大陆</div>
+                                    </a>
+
+                                </div>
+                                <div class="col-3 ">
+                                    <a href="#demo ">
+                                        <div class="text-center "><img src="img/c2.jpg " class="mx-auto img-fluid " /></div>
+                                        <div class="text-center p-2 text-dark ">关于我转生变成史莱姆</div>
+                                    </a>
+
+                                </div>
+                                <div class="col-3 ">
+                                    <a href="#demo ">
+                                        <div class="text-center "><img src="img/c3.jpg " class="mx-auto img-fluid " /></div>
+                                        <div class="text-center p-2 text-dark ">火影忍者：博人传</div>
+                                    </a>
+
+                                </div>
+                                <div class="col-3 ">
+                                    <a href="#demo ">
+                                        <div class="text-center "><img src="img/c4.jpg " class="mx-auto img-fluid " /></div>
+                                        <div class="text-center p-2 text-dark ">海贼王</div>
+                                    </a>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mt-2 p-2 bg-white ">
+                            <div class="mb-4 border-bottom border-primary text-center " style="width: 100px; ">
+                                <h5>最新发布</h5>
+                            </div>
+                            <div class="container-fluid ">
+                                <div class="row mb-3 d-flex justify-content-lg-between ">
+                                    <div class="col-9 ">
+                                        <p>
+                                            <span class="badge text-white bg-danger ">会生活</span>
+                                            <span class=" " style="font-weight:500;font-size: large; ">TV动画《碧蓝航线》新视觉会公开</span>
+                                        </p>
+                                        <p class="py-0 my-0 mb-1 text-black-50 " style="font-size:x-small; ">
+                                            2019年10月3日—2020年3月20日</p>
+                                        <text class=" " style="font-size: small; ">
+												电视动画《碧蓝航线》改编自Manjuu和Yongshi开发的同名手机游戏，于2018年9月15日在游戏日本版1周年纪念活动席上宣布动画化的决定
+												[1]。
+												动画由Bibury Animation Studios负责制作，于2019年10月3日起每周四在TOKYO MX和BS11首播
+												[2-3]，中国由bilibili独家正版发布 [4]，全12话。
+											</text>
+                                    </div>
+                                    <span class="d-flex align-content-center ">
+											<img src="img/d1.jpg " style="width: 200px; height: 100px; " />
+										</span>
+                                </div>
+                                <div class="row mb-3 d-flex justify-content-between ">
+                                    <div class="col-9 ">
+                                        <p>
+                                            <span class="badge text-white bg-danger ">会生活</span>
+                                            <span class=" " style="font-weight:500;font-size: large; ">小说改编的动漫《全职高手》</span>
+                                        </p>
+                                        <p class="py-0 my-0 mb-1 text-black-50 " style="font-size:x-small; ">
+                                            2011年2月28日/2014年4月28日</p>
+                                        <text style="font-size: small; ">
+												《全职高手》是蝴蝶蓝连载于起点中文网的网游小说。
+												书名取自主角叶修是荣耀网游全职业精通的“全职高手”。 [1]
+												2017年7月12日，《2017猫片 胡润原创文学IP价值榜》发布，《全职高手》排名第13位。 [2]
+												2018年12月20日，《2018猫片 胡润原创文学IP价值榜》发布，《全职高手》排名第4位
+											</text>
+                                    </div>
+                                    <span class="d-flex align-content-center ">
+											<img src="img/d2.jpg " style="width: 200px; height: 100px; " />
+										</span>
+                                </div>
+                                <div class="row mb-3 d-flex justify-content-between ">
+                                    <div class="col-9 ">
+                                        <p><span class="badge text-white bg-danger ">会生活</span><span class=" " style="font-weight:500;font-size: large; ">动漫《斗破苍穹》新视觉会公开</span></p>
+                                        <p class="py-0 my-0 mb-1 text-black-50 " style="font-size:x-small; ">
+                                            2009-04-1/2011-07-20</p>
+                                        <text style="font-size: small; ">
+												《斗破苍穹》是一本连载于起点中文网的古装玄幻小说，作者是起点白金作家天蚕土豆（李虎），已完结。这里是属于斗气的世界，没有花俏艳丽的魔法，有的，仅仅是繁衍到巅峰的斗气。
+												心潮澎湃，无限幻想，迎风挥击千层浪，少年不败热血！
+												等级制度：斗之气，斗者，斗师，大斗师，斗灵，斗王，斗皇，斗宗，斗尊，斗圣，斗帝。
+												远古八族：古、萧、魂、药、雷、炎、石、灵。
+											</text>
+                                    </div>
+                                    <span class="d-flex align-content-center ">
+											<img src="img/d3.jpg "  style="width: 200px; height: 100px; "/>
+										</span>
+                                </div>
+                                <!-- 实验区域 -->
+                                <div class="container-fluid p-0">
+                                    <div class="d-flex justify-content-center">
+                                        <button id="btn1" class="border-0  text-center text-black-50" data-toggle="collapse" data-target="#gd">
+                                         更多资讯
+                                        </button>
+                                    </div>
+                                    <div id="gd" class="collapse">
+                                        <div class="row mb-3 d-flex justify-content-lg-between p-0">
+                                            <div class="col-9 ">
+                                                <p>
+                                                    <span class="badge text-white bg-danger ">会生活</span>
+                                                    <span class=" " style="font-weight:500;font-size: large; ">TV动画《碧蓝航线》新视觉会公开</span>
+                                                </p>
+                                                <p class="py-0 my-0 mb-1 text-black-50 " style="font-size:x-small; ">
+                                                    2019年10月3日—2020年3月20日</p>
+                                                <text class=" " style="font-size: small; ">
+                                                        电视动画《碧蓝航线》改编自Manjuu和Yongshi开发的同名手机游戏，于2018年9月15日在游戏日本版1周年纪念活动席上宣布动画化的决定
+                                                        [1]。
+                                                        动画由Bibury Animation Studios负责制作，于2019年10月3日起每周四在TOKYO MX和BS11首播
+                                                        [2-3]，中国由bilibili独家正版发布 [4]，全12话。
+                                                    </text>
+                                            </div>
+                                            <span class="d-flex align-content-center ">
+                                                    <img src="img/d1.jpg " style="width: 200px; height: 100px; " />
+                                                </span>
+                                        </div>
+                                        <div class="row mb-3 d-flex justify-content-between ">
+                                            <div class="col-9 ">
+                                                <p>
+                                                    <span class="badge text-white bg-danger ">会生活</span>
+                                                    <span class=" " style="font-weight:500;font-size: large; ">小说改编的动漫《全职高手》</span>
+                                                </p>
+                                                <p class="py-0 my-0 mb-1 text-black-50 " style="font-size:x-small; ">
+                                                    2011年2月28日/2014年4月28日</p>
+                                                <text style="font-size: small; ">
+                                                        《全职高手》是蝴蝶蓝连载于起点中文网的网游小说。
+                                                        书名取自主角叶修是荣耀网游全职业精通的“全职高手”。 [1]
+                                                        2017年7月12日，《2017猫片 胡润原创文学IP价值榜》发布，《全职高手》排名第13位。 [2]
+                                                        2018年12月20日，《2018猫片 胡润原创文学IP价值榜》发布，《全职高手》排名第4位
+                                                    </text>
+                                            </div>
+                                            <span class="d-flex align-content-center ">
+                                                    <img src="img/d2.jpg " style="width: 200px; height: 100px; " />
+                                                </span>
+                                        </div>
+                                        <div class="row mb-3 d-flex justify-content-between ">
+                                            <div class="col-9 ">
+                                                <p><span class="badge text-white bg-danger ">会生活</span><span class=" " style="font-weight:500;font-size: large; ">动漫《斗破苍穹》新视觉会公开</span></p>
+                                                <p class="py-0 my-0 mb-1 text-black-50 " style="font-size:x-small; ">
+                                                    2009-04-1/2011-07-20</p>
+                                                <text style="font-size: small; ">
+                                                        《斗破苍穹》是一本连载于起点中文网的古装玄幻小说，作者是起点白金作家天蚕土豆（李虎），已完结。这里是属于斗气的世界，没有花俏艳丽的魔法，有的，仅仅是繁衍到巅峰的斗气。
+                                                        心潮澎湃，无限幻想，迎风挥击千层浪，少年不败热血！
+                                                        等级制度：斗之气，斗者，斗师，大斗师，斗灵，斗王，斗皇，斗宗，斗尊，斗圣，斗帝。
+                                                        远古八族：古、萧、魂、药、雷、炎、石、灵。
+                                                    </text>
+                                            </div>
+                                            <span class="d-flex align-content-center ">
+                                                    <img src="img/d3.jpg "  style="width: 200px; height: 100px; "/>
+                                                </span>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex justify-content-center">
+                                        <button id="btn2" class="border-0 text-center text-black-50" data-toggle="collapse" data-target="#gd">
+                                        收起
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--内容右侧部分-->
+                <div class="col-2 d-none d-md-block ">
+                    <div class="bg-white p-2 h-100 ">
+                        <h5>搜索栏</h5>
+                        <hr />
+                        <div class="input-group ">
+                            <input type="text " id="input1 " class="form-control " placeholder="请输入关键字 " />
+                            <div class="input-group-append ">
+                                <button type="submit " class="input-group-text bg-danger text-white ">搜索</button>
+                            </div>	
+                        </div>
+						<div></div>
+                        <div class="mt-4 p-2 border " style="height: 500px; ">
+                            <div id="demo1" class="mx-auto carousel slide ">
+                                <div class="mx-auto ">
+                                    <a class="text-dark d-flex align-content-center " href="#demo1" data-slide="next">
+											随机推荐<i class="bi-arrow-clockwise ml-lg-2 "></i>
+										</a>
+                                </div>
+                                <hr />
+                                <div class="carousel-inner ">
+                                    <div class="carousel-item active ">
+                                        <div class="mb-3 ">
+                                            <a href="# " class=" text-black-50 ">
+                                                <span class="bg-warning px-1 badge-pill mr-1 text-white ">1</span>
+                                                <span>关于我转生变成史莱姆这档事OAD<i
+															class="bi-thermometer-half text-danger "></i></span>
+                                            </a>
+
+                                        </div>
+                                        <div class="mb-3 ">
+                                            <a href="# " class=" text-black-50 ">
+                                                <span class="bg-primary px-1 rounded-pill mr-1 text-white ">2</span> 黑色四叶草
+                                            </a>
+
+                                        </div>
+                                        <div class="mb-3 ">
+                                            <a href="# " class=" text-black-50 ">
+                                                <span class="bg-primary px-1 rounded-pill mr-1 text-white ">3</span> 名侦探柯南
+                                            </a>
+
+                                        </div>
+                                        <div class="mb-3 ">
+                                            <a href="# " class=" text-black-50 ">
+                                                <span class="bg-secondary px-1 rounded-pill mr-1 text-white ">4</span> 一念永恒
+                                            </a>
+
+                                        </div>
+                                        <div class="mb-3 ">
+                                            <a href="# " class=" text-black-50 ">
+                                                <span class="bg-secondary px-1 rounded-pill mr-1 text-white ">5</span> 刀剑神域 Alicization
+                                            </a>
+
+                                        </div>
+                                        <div class="mb-3 ">
+                                            <a href="# " class=" text-black-50 ">
+                                                <span class="bg-secondary px-1 rounded-pill mr-1 text-white ">6</span>白沙的水族馆</a>
+
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item ">
+                                        <div class="mb-3 ">
+                                            <a href="# " class=" text-black-50 ">
+                                                <span class="bg-warning px-1 badge-pill mr-1 text-white ">1</span>
+                                                <span>凡人修仙传<i class="bi-thermometer-half text-danger "></i></span>
+                                            </a>
+                                        </div>
+                                        <div class="mb-3 ">
+                                            <a href="# " class=" text-black-50 ">
+                                                <span class="bg-primary px-1 rounded-pill mr-1 text-white ">2</span> 元龙
+                                            </a>
+
+                                        </div>
+                                        <div class="mb-3 ">
+                                            <a href="# " class=" text-black-50 ">
+                                                <span class="bg-primary px-1 rounded-pill mr-1 text-white ">3</span> 少年歌行
+                                            </a>
+
+                                        </div>
+                                        <div class="mb-3 ">
+                                            <a href="# " class=" text-black-50 ">
+                                                <span class="bg-secondary px-1 rounded-pill mr-1 text-white ">4</span> 画江湖之不良人
+                                            </a>
+
+                                        </div>
+                                        <div class="mb-3 ">
+                                            <a href="# " class=" text-black-50 ">
+                                                <span class="bg-secondary px-1 rounded-pill mr-1 text-white ">5</span> 暗杀教室
+                                            </a>
+
+                                        </div>
+                                        <div class="mb-3 ">
+                                            <a href="# " class=" text-black-50 ">
+                                                <span class="bg-secondary px-1 rounded-pill mr-1 text-white ">6</span> 百妖谱
+                                            </a>
+
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item ">
+                                        <div class="mb-3 ">
+                                            <a href="# " class=" text-black-50 ">
+                                                <span class="bg-warning px-1 badge-pill mr-1 text-white ">1</span>
+                                                <span>天宝伏妖录<i class="bi-thermometer-half text-danger "></i></span>
+                                            </a>
+                                        </div>
+                                        <div class="mb-3 ">
+                                            <a href="# " class=" text-black-50 ">
+                                                <span class="bg-primary px-1 rounded-pill mr-1 text-white ">2</span> 仙王的日常生活
+                                            </a>
+
+                                        </div>
+                                        <div class="mb-3 ">
+                                            <a href="# " class=" text-black-50 ">
+                                                <span class="bg-primary px-1 rounded-pill mr-1 text-white ">3</span> 剑网3·侠肝义胆沈剑心
+                                            </a>
+
+                                        </div>
+                                        <div class="mb-3 ">
+                                            <a href="# " class=" text-black-50 ">
+                                                <span class="bg-secondary px-1 rounded-pill mr-1 text-white ">4</span> 刺客伍六七
+                                            </a>
+
+                                        </div>
+                                        <div class="mb-3 ">
+                                            <a href="# " class=" text-black-50 ">
+                                                <span class="bg-secondary px-1 rounded-pill mr-1 text-white ">5</span> 魔道祖师
+                                            </a>
+
+                                        </div>
+                                        <div class="mb-3 ">
+                                            <a href="# " class=" text-black-50 ">
+                                                <span class="bg-secondary px-1 rounded-pill mr-1 text-white ">6</span> 全职高手
+                                            </a>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 根部内容 -->
+    <div class="foot container-fluid bg-white mt-3">
+        <div class="row mx-auto container p-3 px-5">
+            <div class="col-4">
+                <div class="" style="color: black !important;">
+                    <span class=" small text-black-50">缘叶二次元</span>
+                    <div class="d-flex mt-2 small">
+                        <ul class="navbar-nav mr-4">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">关于我们</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">联系我们</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">用户协议</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">加入我们</a>
+                            </li>
+                        </ul>
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">友情链接</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">隐私政策</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">bilibili认证</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">lnvestor</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="">
+                    <span class=" small text-black-50">传送门</span>
+                    <div class="d-flex  mt-2 small">
+                        <ul class="navbar-nav mr-4">
+                            <li class="nav-item]">
+                                <a class="nav-link" href="#">协议汇总</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">活动中心</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">活动专题页</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">侵权申诉</a>
+                            </li>
+                        </ul>
+                        <ul class="navbar-nav mr-4">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">帮助中心</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">用户反馈论坛</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">壁纸站</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">广告合作</a>
+                            </li>
+                        </ul>
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">名人堂</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">MCN管理中心</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">高级弹幕</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">品牌号官网</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="container-fluid d-flex flex-column text-center mx-auto">
+                    <div class="mx-auto">
+                        <img src="img/2.jpg" class="img-thumbnail" style="width: 150px;" />
+                    </div>
+
+                    <span class="mt-2 text-black-50 font-italic">扫一扫<span class="small p-2">关注我们</span></span>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="js/jquery-3.6.0.min.js "></script>
+<script src="js/bootstrap.bundle.js "></script>
+<script>
+    var btn1 = document.getElementById('btn1');
+    var btn2 = document.getElementById('btn2');
+    btn1.onclick = function() {
+        btn1.style.display = 'none';
+        btn2.style.display = 'block';
+    }
+    btn2.onclick = function() {
+        btn2.style.display = 'none';
+        btn1.style.display = 'block';
+    }
+    
+    $('#demo1').carousel({
+    	interval:0
+    })
+</script>
+
+</html>

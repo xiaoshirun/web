@@ -1,0 +1,1610 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>动漫资源</title>
+		<link rel="stylesheet" href="css/bootstrap.css" />
+		<link rel="stylesheet" href="font/bootstrap-icons.css" />
+		<style>
+			.nav-pills .nav-link.active {
+				background-color: white !important;
+				color: deepskyblue !important;
+			}
+			
+			.nav-pills .nav-link:hover {
+				color: deepskyblue !important;
+			}
+			
+			#list a {
+				text-decoration: none;
+				color: #000000;
+			}
+			
+			#list a:hover {
+				color: #007BFF;
+			}
+			
+			#nav li a {
+				font-family: collegiate-normal;
+			}
+			
+			#nav li a:hover {
+				color: deepskyblue !important;
+			}
+			
+			.indicators li a {
+				color: darkgrey !important;
+			}
+			
+			.indicators li .active {
+				color: dodgerblue !important;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div>
+			<!--导航栏 -->
+			<div>
+				<nav class="navbar navbar-expand-lg bg-secondary">
+					<div class=" mr-4 ">
+						<a href="#" class="shadow rounded"><img src="img/logo.jpg" style="width:200px;height: 60px;" /></a>
+					</div>
+
+					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+						<span class="bi-activity"></span>
+					</button>
+					<div class="collapse navbar-collapse" id="collapsibleNavbar">
+						<ul class="navbar-nav ml-5 mr-auto w-100" id="nav">
+							<li class="nav-item mr-3">
+								<a class="nav-link text-white" href="index.html"><i class="bi-house"></i>首页 </a>
+							</li>
+							<li class="nav-item mr-3 dropdown">
+								<a class="nav-link text-white" data-toggle="dropdown" href="#">动漫资源</a>
+								<div class="dropdown-menu">
+									<a class="dropdown-item" href="source.html">番剧索引</a>
+									<a class="dropdown-item" href="#">连载动画</a>
+									<a class="dropdown-item" href="#">完结动画</a>
+									<a class="dropdown-item" href="#">资讯</a>
+								</div>
+							</li>
+							<li class="nav-item mr-3 dropdown">
+								<a class="nav-link text-white" data-toggle="dropdown" href="#">动漫人物</a>
+								<div class="dropdown-menu">
+									<a class="dropdown-item" href="#">中国动漫角色</a>
+									<a class="dropdown-item" href="#">日韩动漫角色</a>
+									<a class="dropdown-item" href="#">欧美动漫角色</a>
+								</div>
+							</li>
+							<li class="nav-item dropdown">
+								<a class="nav-link text-white" data-toggle="dropdown" href="#">动漫制作</a>
+								<div class="dropdown-menu">
+									<a class="dropdown-item" href="#">Link 1</a>
+									<a class="dropdown-item" href="#">Link 2</a>
+									<a class="dropdown-item" href="#">Link 3</a>
+								</div>
+							</li>
+
+							<li class="nav-item ml-auto">
+								<a class="nav-link text-white" href="#" data-toggle="modal" data-target="#myModal">登录</a>
+							</li>
+							<div class="modal fade " id="myModal">
+								<div class="modal-dialog d-none d-lg-block">
+									<div class="modal-content">
+										<!-- 模态框主体 -->
+										<div class="px-3">
+											<button type="button" class="close " data-dismiss="modal">&times;</button>
+										</div>
+										<div class="modal-body w-75 mx-auto">
+											<!-- Nav tabs -->
+											<div>
+												<ul class="nav nav-tabs">
+													<li class="nav-item">
+														<a class="nav-link active" data-toggle="tab" href="#home1">账号登陆</a>
+													</li>
+													<li class="nav-item">
+														<a class="nav-link" data-toggle="tab" href="#home2">短信登陆</a>
+													</li>
+												</ul>
+											</div>
+											<!-- Tab panes -->
+											<div class="tab-content " style="height:150px;">
+												<div class="tab-pane active" id="home1">
+													<form class="mt-3">
+														<div class="form-group pb-3">
+															<input type="text" class="form-control" placeholder="账号/用户名/邮箱" />
+														</div>
+														<div class="form-group pb-3 position-relative">
+															<input type="password" class="form-control" placeholder="密码" />
+															<a class="position-absolute" href="#" style="top: 50px;left: 240px;">忘记密码？</a>
+														</div>
+
+													</form>
+												</div>
+												<div class="tab-pane" id="home2">
+													<form class="mt-3">
+														<div class="input-group pb-4">
+															<div class="input-group-prepend">
+																<select class="form-control">
+																	<option>中国大陆</option>
+																	<option>欧美</option>
+																	<option>俄罗斯</option>
+																	<option>意大利</option>
+																	<option>澳大利亚</option>
+																</select>
+															</div>
+															<input type="text" class="form-control" placeholder="手机号">
+														</div>
+														<div class="input-group pb-3">
+															<input type="text" class="form-control" placeholder="验证码">
+															<div class="input-group-append">
+																<span class="input-group-text">发送验证码</span>
+															</div>
+														</div>
+													</form>
+												</div>
+											</div>
+										</div>
+										<div class="modal-footer justify-content-between">
+											<div>
+												<a href="" class="mr-lg-1 text-black-50 small">
+													<img src="https://passport.baidu.com/passApi/img/bd-acc-qzone.png" style="width: 30px;height: 30px;" /> qq登录
+												</a>
+												<a href="" class="text-black-50 small">
+													<img src="https://passport.baidu.com/passApi/img/bd-acc-weixin.png" style="width: 30px;height: 30px;" /> 微信login
+												</a>
+											</div>
+											<div class="d-flex justify-content-between">
+												<button type="submit" class="btn btn-primary form-control mr-1">登录</button>
+												<button class="btn btn-secondary form-control " data-dismiss="modal">关闭</button>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<li class="nav-item ">
+								<a class="nav-link text-white " href="login.html" data-toggle="tooltip " data-placement="bottom " title="欢迎加入我们！ ">注册 </a>
+							</li>
+							<li class="nav-item ">
+								<a class="nav-link font-size-3 ">关于<i class="bi-question-circle-fill "></i></a>
+							</li>
+							<li class="nav-item mx-3">
+								<button class=" btn bg-info w-100 text-white px-4">投稿</button>
+							</li>
+						</ul>
+					</div>
+				</nav>
+			</div>
+			<!--
+				资源类型选择
+			-->
+			<div class="container-fluid mt-3">
+				<div class="container">
+					<!-- Nav pills -->
+
+					<ul class="nav nav-pills small">
+						<li class="nav-item d-flex align-items-center mr-3">
+							<a class="nav-link active text-black-50 pr-1" data-toggle="pill" href="#home">更新时间</a>
+							<span class="d-flex flex-column align-items-center">
+								<i class="bi-caret-up small text-black-50" style="height: 13px;"></i>
+								<i class="bi-caret-down small text-black-50" style="height: 13px;"></i>
+							</span>
+						</li>
+						<li class="nav-item d-flex align-items-center mr-3">
+							<a class="nav-link text-black-50 pr-1" data-toggle="pill" href="#menu1">追番人数</a>
+							<span class="d-flex flex-column align-items-center">
+								<i class="bi-caret-up small text-black-50" style="height: 13px;"></i>
+								<i class="bi-caret-down small text-black-50" style="height: 13px;"></i>
+							</span>
+						</li>
+						<li class="nav-item d-flex align-items-center mr-3">
+							<a class="nav-link text-black-50 pr-1" data-toggle="pill" href="#menu2">最高评分</a>
+							<span class="d-flex flex-column align-items-center">
+								<i class="bi-caret-up small text-black-50" style="height: 13px;"></i>
+								<i class="bi-caret-down small text-black-50" style="height: 13px;"></i>
+							</span>
+						</li>
+						<li class="nav-item d-flex align-items-center mr-3">
+							<a class="nav-link text-black-50 pr-1" data-toggle="pill" href="#menu3">播放数量</a>
+							<span class="d-flex flex-column align-items-center">
+								<i class="bi-caret-up small text-black-50" style="height: 13px;"></i>
+								<i class="bi-caret-down small text-black-50" style="height: 13px;"></i>
+							</span>
+						</li>
+						<li class="nav-item d-flex align-items-center">
+							<a class="nav-link text-black-50 pr-1" data-toggle="pill" href="#menu4">开播时间</a>
+							<span class="d-flex flex-column align-items-center">
+								<i class="bi-caret-up small text-black-50" style="height: 13px;" ></i>
+								<i class="bi-caret-down small text-black-50" style="height: 13px;" ></i>
+							</span>
+						</li>
+						<li class="nav-item d-flex align-items-center" style="margin-left: 100px;">
+							<a class="card-link font-weight-bold text-black-50" style="font-size:  medium" data-toggle="collapse" href="#collapseOne"> 筛选 </a>
+						</li>
+					</ul>
+
+					<!-- Tab panes -->
+					<div class="tab-content">
+						<!--第一个页面-->
+						<div class="tab-pane active container" id="home">
+							<!--筛选部分-->
+							<div>
+								<div id="accordion">
+									<div id="collapseOne" class="collapse show" data-parent="#accordion">
+										<div style="font-size: smaller;">
+											<ul class="nav">
+												<li class="nav-item">
+													<a class="nav-link text-black-50" href="#">类型：</a>
+												</li>
+												<li class="nav-item">
+													<a class="nav-link" href="#">正片</a>
+												</li>
+												<li class="nav-item">
+													<a class="nav-link" href="#">电影</a>
+												</li>
+												<li class="nav-item">
+													<a class="nav-link" href="#">记录</a>
+												</li>
+												<li class="nav-item">
+													<a class="nav-link" href="#">其他</a>
+												</li>
+
+											</ul>
+											<ul class="nav">
+												<li class="nav-item">
+													<a class="nav-link text-black-50" href="#">风格：</a>
+												</li>
+												<li class="nav-item">
+													<a class="nav-link" href="#">全部</a>
+												</li>
+												<li class="nav-item">
+													<a class="nav-link" href="#">原创</a>
+												</li>
+												<li class="nav-item">
+													<a class="nav-link" href="#">漫画改</a>
+												</li>
+												<li class="nav-item">
+													<a class="nav-link" href="#">小说改</a>
+												</li>
+												<li class="nav-item">
+													<a class="nav-link" href="#">游戏改</a>
+												</li>
+												<li class="nav-item">
+													<a class="nav-link" href="#">冒险</a>
+												</li>
+												<li class="nav-item">
+													<a class="nav-link" href="#">热血</a>
+												</li>
+												<li class="nav-item">
+													<a class="nav-link" href="#">穿越</a>
+												</li>
+												<li class="nav-item">
+													<a class="nav-link" href="#">奇幻</a>
+												</li>
+												<li class="nav-item">
+													<a class="nav-link" href="#">奇幻</a>
+												</li>
+												<li class="nav-item">
+													<a class="nav-link" href="#">搞笑</a>
+												</li>
+											</ul>
+											<ul class="nav">
+												<li class="nav-item">
+													<a class="nav-link text-black-50" href="#">状态：</a>
+												</li>
+												<li class="nav-item">
+													<a class="nav-link" href="#">全部</a>
+												</li>
+												<li class="nav-item">
+													<a class="nav-link" href="#">完结</a>
+												</li>
+												<li class="nav-item">
+													<a class="nav-link" href="#">连载</a>
+												</li>
+												<li class="nav-item">
+													<a class="nav-link" href="#">其他</a>
+												</li>
+
+											</ul>
+											<ul class="nav">
+												<li class="nav-item">
+													<a class="nav-link text-black-50" href="#">时间：</a>
+												</li>
+												<li class="nav-item">
+													<a class="nav-link" href="#">全部</a>
+												</li>
+												<li class="nav-item">
+													<a class="nav-link" href="#">2021</a>
+												</li>
+												<li class="nav-item">
+													<a class="nav-link" href="#">2020</a>
+												</li>
+												<li class="nav-item">
+													<a class="nav-link" href="#">2019</a>
+												</li>
+												<li class="nav-item">
+													<a class="nav-link" href="#">2018</a>
+												</li>
+												<li class="nav-item">
+													<a class="nav-link" href="#">2017</a>
+												</li>
+												<li class="nav-item">
+													<a class="nav-link" href="#">2016</a>
+												</li>
+												<li class="nav-item">
+													<a class="nav-link" href="#">2015</a>
+												</li>
+												<li class="nav-item">
+													<a class="nav-link" href="#">2014-2010</a>
+												</li>
+												<li class="nav-item">
+													<a class="nav-link" href="#">2009-2005</a>
+												</li>
+												<li class="nav-item">
+													<a class="nav-link" href="#">2004-2000</a>
+												</li>
+												<li class="nav-item">
+													<a class="nav-link" href="#">90年代</a>
+												</li>
+												<li class="nav-item">
+													<a class="nav-link" href="#">80年代</a>
+												</li>
+												<li class="nav-item">
+													<a class="nav-link" href="#">更早</a>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!--
+								动漫资源图片列表
+							-->
+							<div id="dyy" class="carousel slide">
+								<div class="carousel-inner">
+									<div class="carousel-item active">
+										<div class="mt-3">
+											<!-- 第一行内容 -->
+											<div class="d-flex row mb-3" id="list">
+												<div class="col">
+													<div class="position-relative" style="color: white;">
+														<span class="position-absolute text-center align-items-center" style="left:100px;width:60px;height: 24px;font-size: 12px;line-height: 24px;border-radius:4px; background-color: rgb(0, 192, 255);">
+															独家
+														</span>
+														<a href="#"><img src="img/zy1.jpg" class="img-fluid" style="width:160px;height: 214px;" /></a>
+														<span class="position-absolute pt-4 pl-1" style="height:50px;width: 160px;left:0px;bottom: 0px;font-size: 12px; color: #fff;">
+															1208.5万追番
+														</span>
+													</div>
+													<div class=" d-flex flex-column">
+														<span class="">
+															<a href="#"style="font-size:14px;">鬼灭之刃无限列车篇</a>
+														</span>
+														<span class="">
+															<a href="#"class="text-black-50"
+															 style="font-size:smaller;">更新至第3话
+															 </a>
+														</span>
+													</div>
+												</div>
+												<div class="col">
+													<div class="position-relative" style="color: white;">
+														<span class="position-absolute text-center align-items-center" style="left:100px;width:60px;height: 24px;font-size: 12px;line-height: 24px;border-radius:4px; background-color: rgb(0, 192, 255);">
+															独家
+														</span>
+														<a href="#"><img src="img/zy2.jpg" class="img-fluid" style="width:160px;height: 214px;" /></a>
+														<span class="position-absolute pt-4 pl-1" style="height:50px;width: 160px;left:0px;bottom: 0px;font-size: 12px; color: #fff;">
+															1095.5万追番
+														</span>
+													</div>
+													<div class=" d-flex flex-column">
+														<span class="">
+															<a href="#"style="font-size:14px;">鬼灭之刃</a>
+														</span>
+														<span class="">
+															<a href="#"class="text-black-50"
+															 style="font-size:smaller;">全26话
+															 </a>
+														</span>
+													</div>
+												</div>
+												<div class="col">
+													<div class="position-relative" style="color: white;">
+														<span class="position-absolute text-center align-items-center" style="left:100px;width:60px;height: 24px;font-size: 12px;line-height: 24px;border-radius:4px;background-color: rgb(251, 114, 153);">
+															会员专属
+														</span>
+														<a href="#"><img src="img/zy3.jpg" class="img-fluid" style="width:160px;height: 214px;" /></a>
+														<span class="position-absolute pt-4 pl-1" style="height:50px;width: 160px;left:0px;bottom: 0px;font-size: 12px; color: #fff;">
+															1033.9万追番
+														</span>
+													</div>
+													<div class=" d-flex flex-column">
+														<span class="">
+															<a href="#"style="font-size:14px;">咒术回战</a>
+														</span>
+														<span class="">
+															<a href="#"class="text-black-50"
+															 style="font-size:smaller;">全24话
+															 </a>
+														</span>
+													</div>
+												</div>
+												<div class="col">
+													<div class="position-relative" style="color: white;">
+														<span class="position-absolute text-center align-items-center" style="left:100px;width:60px;height: 24px;font-size: 12px;line-height: 24px;border-radius:4px;    background-color: rgb(0, 192, 255);">
+															独家
+														</span>
+														<a href="#"><img src="img/zy4.jpg" class="img-fluid" style="width:160px;height: 214px;" /></a>
+														<span class="position-absolute pt-4 pl-1" style="height:50px;width: 160px;left:0px;bottom: 0px;font-size: 12px; color: #fff;">
+															913.3万追剧
+														</span>
+													</div>
+													<div class=" d-flex flex-column">
+														<span class="">
+															<a href="#"style="font-size:14px;">工作细胞：细胞大作战</a>
+														</span>
+														<span class="">
+															<a href="#"class="text-black-50"
+															 style="font-size:smaller;">2021-04-09上映
+															 </a>
+														</span>
+													</div>
+												</div>
+												<div class="col">
+													<div class="position-relative" style="color: white;">
+														<span class="position-absolute text-center align-items-center" style="left:100px;width:60px;height: 24px;font-size: 12px;line-height: 24px;border-radius:4px;background-color: rgb(251, 114, 153)">
+															会员专享
+														</span>
+														<a href="#"><img src="img/zy5.jpg" class="img-fluid" style="width:160px;height: 214px;" /></a>
+														<span class="position-absolute pt-4 pl-1" style="height:50px;width: 160px;left:0px;bottom: 0px;font-size: 12px; color: #fff;">
+															1208.5玩追番
+														</span>
+													</div>
+													<div class="d-flex flex-column">
+														<span class="w-75">
+															<a href="#"style="font-size:14px;">关于我转生变成史莱姆这档事 第二季</a>
+														</span>
+														<span class="">
+															<a href="#"class="text-black-50"
+															 style="font-size:smaller;">全24话
+															 </a>
+														</span>
+													</div>
+												</div>
+											</div>
+											<!-- 第二行的内容 -->
+											<div class="d-flex row mb-3" id="list">
+												<div class="col">
+													<div class="position-relative" style="color: white;">
+														<span class="position-absolute text-center align-items-center" style="left:100px;width:60px;height: 24px;font-size: 12px;line-height: 24px;border-radius:4px;background-color: rgb(251, 114, 153)">
+															会员专享
+														</span>
+														<a href="#"><img src="img/zy6.jpg" class="img-fluid" style="width:160px;height: 214px;" /></a>
+														<span class="position-absolute pt-4 pl-1" style="height:50px;width: 160px;left:0px;bottom: 0px;font-size: 12px; color: #fff;">
+															839.2万追番
+														</span>
+													</div>
+													<div class=" d-flex flex-column">
+														<span class="w-75">
+															<a href="#"style="font-size:14px;">Re：从零开始的异世界生活 第二季 后半</a>
+														</span>
+														<span class=" ">
+															<a href="#"class="text-black-50 "
+															 style="font-size:smaller; ">全12话
+															 </a>
+														</span>
+													</div>
+												</div>
+												<div class="col">
+													<div class="position-relative " style="color: white;">
+														<span class="position-absolute text-center align-items-center " style="left:100px;width:60px;height: 24px;font-size: 12px;line-height: 24px;border-radius:4px;background-color: rgb(0, 192, 255); ">
+															独家
+														</span>
+														<a href="#"><img src="img/zy7.jpg" class="img-fluid" style="width:160px;height: 214px;" /></a>
+														<span class="position-absolute pt-4 pl-1 " style="height:50px;width: 160px;left:0px;bottom: 0px;font-size: 12px; color: #fff; ">
+															836.2万追番
+														</span>
+													</div>
+													<div class=" d-flex flex-column ">
+														<span class=" ">
+															<a href="#"style="font-size:14px; ">工作细胞 第二季</a>
+														</span>
+														<span class=" ">
+															<a href="#"class="text-black-50"
+															 style="font-size:smaller;">全8话
+															 </a>
+														</span>
+													</div>
+												</div>
+												<div class="col ">
+													<div class="position-relative " style="color: white; ">
+														<span class="position-absolute text-center align-items-center " style="left:100px;width:60px;height: 24px;font-size: 12px;line-height: 24px;border-radius:4px;background-color: rgb(251, 114, 153); ">
+															会员专属
+														</span>
+														<a href="#"><img src="img/zy8.jpg " class="img-fluid " style="width:160px;height: 214px;" /></a>
+														<span class="position-absolute pt-4 pl-1" style="height:50px;width: 160px;left:0px;bottom: 0px;font-size: 12px; color: #fff; ">
+															1208.5玩追番
+														</span>
+													</div>
+													<div class=" d-flex flex-column ">
+														<span class="w-75 ">
+															<a href="#"style="font-size:14px; ">关于我转生变成史莱姆这档事 转生史莱姆日记</a>
+														</span>
+														<span class=" ">
+															<a href="#"class="text-black-50 "
+															 style="font-size:smaller;">全12话
+															 </a>
+														</span>
+													</div>
+												</div>
+												<div class="col ">
+													<div class="position-relative " style="color: white;">
+														<span class="position-absolute text-center align-items-center " style="left:100px;width:60px;height: 24px;font-size: 12px;line-height: 24px;border-radius:4px; background-color: rgb(0, 192, 255); ">
+															独家
+														</span>
+														<a href="#"><img src="img/zy9.jpg " class="img-fluid " style="width:160px;height: 214px;" /></a>
+														<span class="position-absolute pt-4 pl-1 " style="height:50px;width: 160px;left:0px;bottom: 0px;font-size: 12px; color: #fff; ">
+															1208.5玩追番
+														</span>
+													</div>
+													<div class=" d-flex flex-column ">
+														<span class=" ">
+															<a href="#"style="font-size:14px; ">小林家的龙女仆 第二季</a>
+														</span>
+														<span class=" ">
+															<a href="#"class="text-black-50 "
+															 style="font-size:smaller; ">更新至第3话
+															 </a>
+														</span>
+													</div>
+												</div>
+												<div class="col">
+													<div class="position-relative " style="color: white; ">
+														<span class="position-absolute text-center align-items-center " style="left:100px;width:60px;height: 24px;font-size: 12px;line-height: 24px;border-radius:4px; background-color: rgb(0, 192, 255);">
+															独家
+														</span>
+														<a href="#"><img src="img/zy10.jpg " class="img-fluid " style="width:160px;height: 214px; " /></a>
+														<span class="position-absolute pt-4 pl-1 " style="height:50px;width: 160px;left:0px;bottom: 0px;font-size: 12px; color: #fff; ">
+															790.8万追番
+														</span>
+													</div>
+													<div class="d-flex flex-column ">
+														<span class=" ">
+															<a href="#"style="font-size:14px; ">工作细胞</a>
+														</span>
+														<span class=" ">
+															<a href="#"class="text-black-50"
+															 style="font-size:smaller;">全14话
+															 </a>
+														</span>
+													</div>
+												</div>
+											</div>
+											<!--第三行内容-->
+											<div class="d-flex row mb-3" id="list">
+												<div class="col ">
+													<div class="position-relative " style="color: white; ">
+														<span class="position-absolute text-center align-items-center " style="left:100px;width:60px;height: 24px;font-size: 12px;line-height: 24px;border-radius:4px;background-color: rgb(251, 114, 153) ">
+															会员专享
+														</span>
+														<a href="#"><img src="img/zy11.jpg " class="img-fluid " style="width:160px;height: 214px;" /></a>
+														<span class="position-absolute pt-4 pl-1 " style="height:50px;width: 160px;left:0px;bottom: 0px;font-size: 12px; color: #fff; ">
+															2208.5万追番
+														</span>
+													</div>
+													<div class=" d-flex flex-column ">
+														<span class="w-75 ">
+															<a href="#"style="font-size:14px; ">刀剑神域 爱丽丝篇 异界战争 -终章-</a>
+														</span>
+														<span class=" ">
+															<a href="#"class="text-black-50"
+															 style="font-size:smaller; ">全12话
+															 </a>
+														</span>
+													</div>
+												</div>
+												<div class="col">
+													<div class="position-relative " style="color: white; ">
+														<span class="position-absolute text-center align-items-center " style="left:100px;width:60px;height: 24px;font-size: 12px;line-height: 24px;border-radius:4px; background-color: rgb(0, 192, 255); ">
+															独家
+														</span>
+														<a href="#"><img src="img/zy12.jpg " class="img-fluid " style="width:160px;height: 214px; " /></a>
+														<span class="position-absolute pt-4 pl-1 " style="height:50px;width: 160px;left:0px;bottom: 0px;font-size: 12px; color: #fff; ">
+															588.9万追番
+														</span>
+													</div>
+													<div class=" d-flex flex-column ">
+														<span class="w-75">
+															<a href="#"style="font-size:14px; ">紫罗兰永恒花园外传：永远与自动手记人偶</a>
+														</span>
+														<span class=" ">
+															<a href="#"class="text-black-50 "
+															 style="font-size:smaller;">2020-01-10上映
+															 </a>
+														</span>
+													</div>
+												</div>
+												<div class="col">
+													<div class="position-relative " style="color: white; ">
+														<span class="position-absolute text-center align-items-center " style="left:100px;width:60px;height: 24px;font-size: 12px;line-height: 24px;border-radius:4px; background-color: rgb(0, 192, 255); ">
+															独家
+														</span>
+														<a href="#"><img src="img/zy13.jpg " class="img-fluid " style="width:160px;height: 214px; " /></a>
+														<span class="position-absolute pt-4 pl-1 " style="height:50px;width: 160px;left:0px;bottom: 0px;font-size: 12px; color: #fff; ">
+															585.2万追番
+														</span>
+													</div>
+													<div class=" d-flex flex-column ">
+														<span class=" ">
+															<a href="#"style="font-size:14px; ">OVERLORD</a>
+														</span>
+														<span class=" ">
+															<a href="#"class="text-black-50 "
+															 style="font-size:smaller;">全13话
+															 </a>
+														</span>
+													</div>
+												</div>
+												<div class="col">
+													<div class="position-relative " style="color: white; ">
+														<span class="position-absolute text-center align-items-center " style="left:100px;width:60px;height: 24px;font-size: 12px;line-height: 24px;border-radius:4px; background-color: rgb(0, 192, 255); ">
+															独家
+														</span>
+														<a href="#"><img src="img/zy14.jpg " class="img-fluid " style="width:160px;height: 214px; " /></a>
+														<span class="position-absolute pt-4 pl-1 " style="height:50px;width: 160px;left:0px;bottom: 0px;font-size: 12px; color: #fff; ">
+															583.5万追番
+														</span>
+													</div>
+													<div class=" d-flex flex-column ">
+														<span class=" ">
+															<a href="#"style="font-size:14px; ">因为太怕同就全点了防御力</a>
+														</span>
+														<span class=" ">
+															<a href="#"class="text-black-50 "
+															 style="font-size:smaller; ">全12话
+															 </a>
+														</span>
+													</div>
+												</div>
+												<div class="col">
+													<div class="position-relative " style="color: white; ">
+														<span class="position-absolute text-center align-items-center " style="left:100px;width:60px;height: 24px;font-size: 12px;line-height: 24px;border-radius:4px; background-color: rgb(0, 192, 255); ">
+															独家
+														</span>
+														<a href="# "><img src="img/zy15.jpg " class="img-fluid " style="width:160px;height: 214px;" /></a>
+														<span class="position-absolute pt-4 pl-1 " style="height:50px;width: 160px;left:0px;bottom: 0px;font-size: 12px; color: #fff; ">
+															580.5万追番
+														</span>
+													</div>
+													<div class="d-flex flex-column ">
+														<span class=" ">
+															<a href="#"style="font-size:14px;">转生成蜘蛛又怎样！</a>
+														</span>
+														<span class=" ">
+															<a href="#"class="text-black-50 "
+															 style="font-size:smaller; ">全24话
+															 </a>
+														</span>
+													</div>
+												</div>
+											</div>
+											<!--第四行内容-->
+											<div class="d-flex row mb-3 " id="list">
+												<div class="col">
+													<div class="position-relative " style="color: white; ">
+														<span class="position-absolute text-center align-items-center " style="left:100px;width:60px;height: 24px;font-size: 12px;line-height: 24px;border-radius:4px; background-color: rgb(0, 192, 255); ">
+															独家
+														</span>
+														<a href="#"><img src="img/zy16.jpg " class="img-fluid " style="width:160px;height: 214px; " /></a>
+														<span class="position-absolute pt-4 pl-1 " style="height:50px;width: 160px;left:0px;bottom: 0px;font-size: 12px; color: #fff; ">
+															564.7万追番
+														</span>
+													</div>
+													<div class=" d-flex flex-column  ">
+														<span class=" w-75">
+															<a href="#"style="font-size:14px; ">夏目友人帐 唤石者与怪异的访客</a>
+														</span>
+														<span class=" ">
+															<a href="#"class="text-black-50 "
+															 style="font-size:smaller; ">全1话
+															 </a>
+														</span>
+													</div>
+												</div>
+												<div class="col">
+													<div class="position-relative " style="color: white; ">
+														<span class="position-absolute text-center align-items-center " style="left:100px;width:60px;height: 24px;font-size: 12px;line-height: 24px;border-radius:4px; background-color: rgb(0, 192, 255); ">
+															独家
+														</span>
+														<a href="#"><img src="img/zy17.jpg " class="img-fluid " style="width:160px;height: 214px; " /></a>
+														<span class="position-absolute pt-4 pl-1 " style="height:50px;width: 160px;left:0px;bottom: 0px;font-size: 12px; color: #fff; ">
+															557.5万追番
+														</span>
+													</div>
+													<div class=" d-flex flex-column ">
+														<span class=" ">
+															<a href="#"style="font-size:14px; ">在下坂本，有何贵干？</a>
+														</span>
+														<span class=" ">
+															<a href="# "class="text-black-50 "
+															 style="font-size:smaller; ">全13话
+															 </a>
+														</span>
+													</div>
+												</div>
+												<div class="col">
+													<div class="position-relative " style="color: white; ">
+														<span class="position-absolute text-center align-items-center " style="left:100px;width:60px;height: 24px;font-size: 12px;line-height: 24px;border-radius:4px;background-color: rgb(251, 114, 153); ">
+															会员专享
+														</span>
+														<a href="#"><img src="img/zy18.jpg " class="img-fluid " style="width:160px;height: 214px; " /></a>
+														<span class="position-absolute pt-4 pl-1 " style="height:50px;width: 160px;left:0px;bottom: 0px;font-size: 12px; color: #fff; ">
+															537.4万追番
+														</span>
+													</div>
+													<div class=" d-flex flex-column ">
+														<span class="w-75 ">
+															<a href="#" style="font-size:14px;">我的青春恋爱物语果然有问题。完</a>
+														</span>
+														<span class=" ">
+															<a href="#"class="text-black-50 "
+															 style="font-size:smaller;">全12话
+															 </a>
+														</span>
+													</div>
+												</div>
+												<div class="col">
+													<div class="position-relative " style="color: white; ">
+														<span class="position-absolute text-center align-items-center " style="left:100px;width:60px;height: 24px;font-size: 12px;line-height: 24px;border-radius:4px; background-color: rgb(0, 192, 255); ">
+															独家
+														</span>
+														<a href="#"><img src="img/zy19.jpg " class="img-fluid " style="width:160px;height: 214px; " /></a>
+														<span class="position-absolute pt-4 pl-1 " style="height:50px;width: 160px;left:0px;bottom: 0px;font-size: 12px; color: #fff; ">
+															536.8万追番
+														</span>
+													</div>
+													<div class=" d-flex flex-column ">
+														<span class=" ">
+															<a href="#"style="font-size:14px; ">徒然喜欢你</a>
+														</span>
+														<span class=" ">
+															<a href="#"class="text-black-50 "
+															 style="font-size:smaller; ">全12话
+															 </a>
+														</span>
+													</div>
+												</div>
+												<div class="col">
+													<div class="position-relative " style="color: white; ">
+														<span class="position-absolute text-center align-items-center " style="left:100px;width:60px;height: 24px;font-size: 12px;line-height: 24px;border-radius:4px; background-color: rgb(0, 192, 255); ">
+															独家
+														</span>
+														<a href="#"><img src="img/zy20.jpg " class="img-fluid " style="width:160px;height: 214px; " /></a>
+														<span class="position-absolute pt-4 pl-1 " style="height:50px;width: 160px;left:0px;bottom: 0px;font-size: 12px; color: #fff; ">
+															532.2万追番
+														</span>
+													</div>
+													<div class=" d-flex flex-column ">
+														<span class=" ">
+															<a href="#"style="font-size:14px; ">OVERLORD III</a>
+														</span>
+														<span class=" ">
+															<a href="#"class="text-black-50 "
+															 style="font-size:smaller; ">全13话
+															 </a>
+														</span>
+													</div>
+												</div>
+											</div>
+											<!--第五行内容-->
+											<div class="d-flex row mb-3 " id="list">
+												<div class="col">
+													<div class="position-relative " style="color: white; ">
+														<span class="position-absolute text-center align-items-center " style="left:100px;width:60px;height: 24px;font-size: 12px;line-height: 24px;border-radius:4px; background-color: rgb(0, 192, 255); ">
+														独家
+														</span>
+														<a href="#"><img src="img/zy21.jpg " class="img-fluid " style="width:160px;height: 214px; " /></a>
+														<span class="position-absolute pt-4 pl-1 " style="height:50px;width: 160px;left:0px;bottom: 0px;font-size: 12px; color: #fff; ">
+															520万追番
+														</span>
+													</div>
+													<div class=" d-flex flex-column ">
+														<span class=" ">
+														<a href="#"style="font-size:14px; ">OVERLORD II</a>
+														</span>
+														<span class=" ">
+															<a href="#"class="text-black-50 "
+														 	style="font-size:smaller; ">全13话
+													 		</a>
+														</span>
+													</div>
+												</div>
+												<div class="col">
+													<div class="position-relative " style="color: white; ">
+														<span class="position-absolute text-center align-items-center " style="left:100px;width:60px;height: 24px;font-size: 12px;line-height: 24px;border-radius:4px;background-color: rgb(251, 114, 153) ">
+															会员专享
+														</span>
+														<a href="#"><img src="img/zy22.jpg " class="img-fluid " style="width:160px;height: 214px; " /></a>
+														<span class="position-absolute pt-4 pl-1 " style="height:50px;width: 160px;left:0px;bottom: 0px;font-size: 12px; color: #fff; ">
+															512.6万追番
+														</span>
+													</div>
+													<div class=" d-flex flex-column ">
+														<span class=" w-75">
+															<a href="#"style="font-size:14px; ">刀剑神域 爱丽丝篇 异界战争</a>
+														</span>
+														<span class=" ">
+															<a href="#"class="text-black-50 "
+													 		style="font-size:smaller; ">全13话
+													 		</a>
+														</span>
+													</div>
+												</div>
+												<div class="col">
+													<div class="position-relative " style="color: white; ">
+														<span class="position-absolute text-center align-items-center " style="left:100px;width:60px;height: 24px;font-size: 12px;line-height: 24px;border-radius:4px; background-color: rgb(0, 192, 255); ">
+															独家
+														</span>
+														<a href="#"><img src="img/zy23.jpg " class="img-fluid " style="width:160px;height: 214px; " /></a>
+														<span class="position-absolute pt-4 pl-1 " style="height:50px;width: 160px;left:0px;bottom: 0px;font-size: 12px; color: #fff; ">
+															509.8万追番
+														</span>
+													</div>
+													<div class=" d-flex flex-column ">
+														<span class=" w-75">
+														<a href="#"style="font-size:14px; ">岸边露伴一动也不动</a>
+														</span>
+														<span class=" ">
+															<a href="#"class="text-black-50 "
+													 		style="font-size:smaller; ">全4话
+														 	</a>
+														</span>
+													</div>
+												</div>
+												<div class="col">
+													<div class="position-relative " style="color: white; ">
+														<span class="position-absolute text-center align-items-center " style="left:100px;width:60px;height: 24px;font-size: 12px;line-height: 24px;border-radius:4px; background-color: rgb(0, 192, 255); ">
+															独家
+														</span>
+														<a href="#"><img src="img/zy24.jpg " class="img-fluid " style="width:160px;height: 214px; " /></a>
+														<span class="position-absolute pt-4 pl-1 " style="height:50px;width: 160px;left:0px;bottom: 0px;font-size: 12px; color: #fff; ">
+															507.5万追番
+														</span>
+													</div>
+													<div class=" d-flex flex-column ">
+														<span class="">
+														<a href="#"style="font-size:14px; ">JOJO的奇妙冒险</a>
+														</span>
+														<span class=" ">
+															<a href="#"class="text-black-50 "
+													 			style="font-size:smaller; ">全26话
+													 		</a>
+														</span>
+													</div>
+												</div>
+												<div class="col">
+												<div class="position-relative " style="color: white; ">
+													<span class="position-absolute text-center align-items-center " style="left:100px;width:60px;height: 24px;font-size: 12px;line-height: 24px;border-radius:4px;background-color: rgb(251, 114, 153) ">
+															限时免费
+													</span>
+														<a href="#"><img src="img/zy25.jpg " class="img-fluid " style="width:160px;height: 214px; " /></a>
+													<span class="position-absolute pt-4 pl-1 " style="height:50px;width: 160px;left:0px;bottom: 0px;font-size: 12px; color: #fff; ">
+													507.1万追番
+													</span>
+												</div>
+												<div class="d-flex flex-column ">
+                                        			<span>
+														<a href="#"style="font-size:14px; ">某科学的超电磁炮</a>
+													</span>
+                                        			<span class=" ">
+													<a href="#"class="text-black-50 "
+												 		style="font-size:smaller; ">全24话
+												 	</a>
+													</span>
+                                    			</div>
+                                			</div>
+                            				</div>
+                        				</div>
+									</div>
+									<div class="carousel-item ">
+										<div class="mt-3 ">
+				                            <!-- 第一行内容 -->
+				                            <div class="d-flex row mb-3 " id="list ">
+				                                <div class="col ">
+				                                    <div class="position-relative " style="color: white; ">
+				                                        <span class="position-absolute text-center align-items-center " style="left:100px;width:60px;height: 24px;font-size: 12px;line-height: 24px;border-radius:4px; background-color: rgb(0, 192, 255); ">
+																独家
+															</span>
+				                                        <a href="# "><img src="img/zy1.jpg "  class="img-fluid " style="width:160px;height: 214px; "/></a>
+				                                        <span class="position-absolute pt-4 pl-1 " style="height:50px;width: 160px;left:0px;bottom: 0px;font-size: 12px; color: #fff; ">
+																1208.5万追番
+															</span>
+				                                    </div>
+				                                    <div class=" d-flex flex-column ">
+				                                        <span class=" ">
+																<a href="# "style="font-size:14px; ">鬼灭之刃无限列车篇</a>
+															</span>
+				                                        <span class=" ">
+																<a href="# "class="text-black-50 "
+																 style="font-size:smaller; ">更新至第3话
+																 </a>
+															</span>
+				                                    </div>
+				                                </div>
+				                                <div class="col ">
+				                                    <div class="position-relative " style="color: white; ">
+				                                        <span class="position-absolute text-center align-items-center " style="left:100px;width:60px;height: 24px;font-size: 12px;line-height: 24px;border-radius:4px; background-color: rgb(0, 192, 255); ">
+																独家
+															</span>
+				                                        <a href="#"><img src="img/zy2.jpg " class="img-fluid " style="width:160px;height: 214px; "/></a>
+				                                        <span class="position-absolute pt-4 pl-1 " style="height:50px;width: 160px;left:0px;bottom: 0px;font-size: 12px; color: #fff; ">
+																1095.5万追番
+															</span>
+				                                    </div>
+				                                    <div class=" d-flex flex-column ">
+				                                        <span class=" ">
+																<a href="# "style="font-size:14px; ">鬼灭之刃</a>
+															</span>
+				                                        <span class=" ">
+																<a href="# "class="text-black-50 "
+																 style="font-size:smaller; ">全26话
+																 </a>
+															</span>
+				                                    </div>
+				                                </div>
+				                                <div class="col ">
+				                                    <div class="position-relative " style="color: white; ">
+				                                        <span class="position-absolute text-center align-items-center " style="left:100px;width:60px;height: 24px;font-size: 12px;line-height: 24px;border-radius:4px;background-color: rgb(251, 114, 153); ">
+																会员专属
+															</span>
+				                                        <a href="# "><img src="img/zy3.jpg " class="img-fluid " style="width:160px;height: 214px; "/></a>
+				                                        <span class="position-absolute pt-4 pl-1 " style="height:50px;width: 160px;left:0px;bottom: 0px;font-size: 12px; color: #fff; ">
+																1033.9万追番
+															</span>
+				                                    </div>
+				                                    <div class=" d-flex flex-column ">
+				                                        <span class=" ">
+																<a href="# "style="font-size:14px; ">咒术回战</a>
+															</span>
+				                                        <span class=" ">
+																<a href="# "class="text-black-50 "
+																 style="font-size:smaller; ">全24话
+																 </a>
+															</span>
+				                                    </div>
+				                                </div>
+				                                <div class="col ">
+				                                    <div class="position-relative " style="color: white; ">
+				                                        <span class="position-absolute text-center align-items-center " style="left:100px;width:60px;height: 24px;font-size: 12px;line-height: 24px;border-radius:4px; background-color: rgb(0, 192, 255); ">
+																独家
+															</span>
+				                                        <a href="#"><img src="img/zy4.jpg "  class="img-fluid " style="width:160px;height: 214px; "/></a>
+				                                        <span class="position-absolute pt-4 pl-1 " style="height:50px;width: 160px;left:0px;bottom: 0px;font-size: 12px; color: #fff; ">
+																913.3万追剧
+															</span>
+				                                    </div>
+				                                    <div class=" d-flex flex-column ">
+				                                        <span class=" ">
+																<a href="# "style="font-size:14px; ">工作细胞：细胞大作战</a>
+															</span>
+				                                        <span class=" ">
+																<a href="# "class="text-black-50 "
+																 style="font-size:smaller; ">2021-04-09上映
+																 </a>
+															</span>
+				                                    </div>
+				                                </div>
+				                                <div class="col ">
+				                                    <div class="position-relative " style="color: white; ">
+				                                        <span class="position-absolute text-center align-items-center " style="left:100px;width:60px;height: 24px;font-size: 12px;line-height: 24px;border-radius:4px;background-color: rgb(251, 114, 153) ">
+																会员专享
+															</span>
+				                                        <a href="# "><img src="img/zy5.jpg "  class="img-fluid " style="width:160px;height: 214px; "/></a>
+				                                        <span class="position-absolute pt-4 pl-1 " style="height:50px;width: 160px;left:0px;bottom: 0px;font-size: 12px; color: #fff; ">
+																1208.5玩追番
+															</span>
+				                                    </div>
+				                                    <div class=" d-flex flex-column ">
+				                                        <span class="w-75 ">
+																<a href="# "style="font-size:14px; ">关于我转生变成史莱姆这档事 第二季</a>
+															</span>
+				                                        <span class=" ">
+																<a href="# "class="text-black-50 "
+																 style="font-size:smaller; ">全24话
+																 </a>
+															</span>
+				                                    </div>
+				                                </div>
+				                            </div>
+				                            <!-- 第二行的内容 -->
+				                            <div class="d-flex row mb-3 " id="list ">
+				                                <div class="col ">
+				                                    <div class="position-relative " style="color: white; ">
+				                                        <span class="position-absolute text-center align-items-center " style="left:100px;width:60px;height: 24px;font-size: 12px;line-height: 24px;border-radius:4px;background-color: rgb(251, 114, 153) ">
+																会员专享
+															</span>
+				                                        <a href="# "><img src="img/zy6.jpg " class="img-fluid " style="width:160px;height: 214px; " /></a>
+				                                        <span class="position-absolute pt-4 pl-1 " style="height:50px;width: 160px;left:0px;bottom: 0px;font-size: 12px; color: #fff; ">
+																839.2万追番
+															</span>
+				                                    </div>
+				                                    <div class=" d-flex flex-column p-0 m-0 ">
+				                                        <span class=" ">
+																<a href="# "style="font-size:14px; ">Re：从零开始的异世界生活 第二季 后半</a>
+															</span>
+				                                        <span class=" ">
+																<a href="# "class="text-black-50 "
+																 style="font-size:smaller; ">全12话
+																 </a>
+															</span>
+				                                    </div>
+				                                </div>
+				                                <div class="col ">
+				                                    <div class="position-relative " style="color: white; ">
+				                                        <span class="position-absolute text-center align-items-center " style="left:100px;width:60px;height: 24px;font-size: 12px;line-height: 24px;border-radius:4px;background-color: rgb(0, 192, 255); ">
+																独家
+															</span>
+				                                        <a href="# "><img src="img/zy7.jpg "  class="img-fluid " style="width:160px;height: 214px; "/></a>
+				                                        <span class="position-absolute pt-4 pl-1 " style="height:50px;width: 160px;left:0px;bottom: 0px;font-size: 12px; color: #fff; ">
+																836.2万追番
+															</span>
+				                                    </div>
+				                                    <div class=" d-flex flex-column ">
+				                                        <span class=" ">
+																<a href="# "style="font-size:14px; ">工作细胞 第二季</a>
+															</span>
+				                                        <span class=" ">
+																<a href="# "class="text-black-50 "
+																 style="font-size:smaller; ">全8话
+																 </a>
+															</span>
+				                                    </div>
+				                                </div>
+				                                <div class="col ">
+				                                    <div class="position-relative " style="color: white; ">
+				                                        <span class="position-absolute text-center align-items-center " style="left:100px;width:60px;height: 24px;font-size: 12px;line-height: 24px;border-radius:4px;background-color: rgb(251, 114, 153); ">
+																会员专属
+															</span>
+				                                        <a href="# "><img src="img/zy8.jpg "  class="img-fluid " style="width:160px;height: 214px; "/></a>
+				                                        <span class="position-absolute pt-4 pl-1 " style="height:50px;width: 160px;left:0px;bottom: 0px;font-size: 12px; color: #fff; ">
+																1208.5玩追番
+															</span>
+				                                    </div>
+				                                    <div class=" d-flex flex-column " style="width: 160px; ">
+				                                        <span class=" w-75 ">
+																<a href="# "style="font-size:14px; ">关于我转生变成史莱姆这档事 转生史莱姆日记</a>
+															</span>
+				                                        <span class=" ">
+																<a href="# "class="text-black-50 "
+																 style="font-size:smaller; ">全12话
+																 </a>
+															</span>
+				                                    </div>
+				                                </div>
+				                                <div class="col ">
+				                                    <div class="position-relative " style="color: white; ">
+				                                        <span class="position-absolute text-center align-items-center " style="left:100px;width:60px;height: 24px;font-size: 12px;line-height: 24px;border-radius:4px; background-color: rgb(0, 192, 255); ">
+																独家
+															</span>
+				                                        <a href="#"><img src="img/zy9.jpg "  class="img-fluid " style="width:160px;height: 214px; "/></a>
+				                                        <span class="position-absolute pt-4 pl-1 " style="height:50px;width: 160px;left:0px;bottom: 0px;font-size: 12px; color: #fff; ">
+																1208.5玩追番
+															</span>
+				                                    </div>
+				                                    <div class=" d-flex flex-column ">
+				                                        <span class=" ">
+																<a href="# "style="font-size:14px; ">小林家的龙女仆 第二季</a>
+															</span>
+				                                        <span class=" ">
+																<a href="# "class="text-black-50 "
+																 style="font-size:smaller; ">更新至第3话
+																 </a>
+															</span>
+				                                    </div>
+				                                </div>
+				                                <div class="col ">
+				                                    <div class="position-relative " style="color: white; ">
+				                                        <span class="position-absolute text-center align-items-center " style="left:100px;width:60px;height: 24px;font-size: 12px;line-height: 24px;border-radius:4px; background-color: rgb(0, 192, 255); ">
+																独家
+															</span>
+				                                        <a href="# "><img src="img/zy10.jpg "  class="img-fluid " style="width:160px;height: 214px; "/></a>
+				                                        <span class="position-absolute pt-4 pl-1 " style="height:50px;width: 160px;left:0px;bottom: 0px;font-size: 12px; color: #fff; ">
+																790.8万追番
+															</span>
+				                                    </div>
+				                                    <div class="d-flex flex-column ">
+				                                        <span class=" ">
+																<a href="# "style="font-size:14px; ">工作细胞</a>
+															</span>
+				                                        <span class=" ">
+																<a href="# "class="text-black-50 "
+																 style="font-size:smaller; ">全14话
+																 </a>
+															</span>
+				                                    </div>
+				                                </div>
+				                            </div>
+				                            <!--第三行内容-->
+				                            <div class="d-flex row mb-3 " id="list ">
+				                                <div class="col ">
+				                                    <div class="position-relative " style="color: white; ">
+				                                        <span class="position-absolute text-center align-items-center " style="left:100px;width:60px;height: 24px;font-size: 12px;line-height: 24px;border-radius:4px;background-color: rgb(251, 114, 153) ">
+																会员专享
+															</span>
+				                                        <a href="#"><img src="img/zy11.jpg "  class="img-fluid " style="width:160px;height: 214px; "/></a>
+				                                        <span class="position-absolute pt-4 pl-1 " style="height:50px;width: 160px;left:0px;bottom: 0px;font-size: 12px; color: #fff; ">
+																2208.5万追番
+															</span>
+				                                    </div>
+				                                    <div class=" d-flex flex-column " style="width: 160px; ">
+				                                        <span class=" w-75 ">
+																<a href="# "style="font-size:14px; ">刀剑神域 爱丽丝篇 异界战争 -终章-</a>
+															</span>
+				                                        <span class=" ">
+																<a href="# "class="text-black-50 "
+																 style="font-size:smaller; ">全12话
+																 </a>
+															</span>
+				                                    </div>
+				                                </div>
+				                                <div class="col ">
+				                                    <div class="position-relative " style="color: white; ">
+				                                        <span class="position-absolute text-center align-items-center " style="left:100px;width:60px;height: 24px;font-size: 12px;line-height: 24px;border-radius:4px; background-color: rgb(0, 192, 255); ">
+																独家
+															</span>
+				                                        <a href="# "><img src="img/zy12.jpg "  class="img-fluid " style="width:160px;height: 214px; "/></a>
+				                                        <span class="position-absolute pt-4 pl-1 " style="height:50px;width: 160px;left:0px;bottom: 0px;font-size: 12px; color: #fff; ">
+																588.9万追番
+															</span>
+				                                    </div>
+				                                    <div class=" d-flex flex-column " style="width: 160px; ">
+				                                        <span class=" w-75 ">
+																<a href="# "style="font-size:14px; ">紫罗兰永恒花园外传：永远与自动手记人偶</a>
+															</span>
+				                                        <span class=" ">
+																<a href="# "class="text-black-50 "
+																 style="font-size:smaller; ">2020-01-10上映
+																 </a>
+															</span>
+				                                    </div>
+				                                </div>
+				                                <div class="col ">
+				                                    <div class="position-relative " style="color: white; ">
+				                                        <span class="position-absolute text-center align-items-center " style="left:100px;width:60px;height: 24px;font-size: 12px;line-height: 24px;border-radius:4px; background-color: rgb(0, 192, 255); ">
+																独家
+															</span>
+				                                        <a href="# "><img src="img/zy13.jpg " class="img-fluid " style="width:160px;height: 214px; "/></a>
+				                                        <span class="position-absolute pt-4 pl-1 " style="height:50px;width: 160px;left:0px;bottom: 0px;font-size: 12px; color: #fff; ">
+																585.2万追番
+															</span>
+				                                    </div>
+				                                    <div class=" d-flex flex-column ">
+				                                        <span class=" ">
+																<a href="# "style="font-size:14px; ">OVERLORD</a>
+															</span>
+				                                        <span class=" ">
+																<a href="# "class="text-black-50 "
+																 style="font-size:smaller; ">全13话
+																 </a>
+															</span>
+				                                    </div>
+				                                </div>
+				                                <div class="col ">
+				                                    <div class="position-relative " style="color: white; ">
+				                                        <span class="position-absolute text-center align-items-center " style="left:100px;width:60px;height: 24px;font-size: 12px;line-height: 24px;border-radius:4px; background-color: rgb(0, 192, 255); ">
+																独家
+															</span>
+				                                        <a href="#"><img src="img/zy14.jpg "  class="img-fluid " style="width:160px;height: 214px; "/></a>
+				                                        <span class="position-absolute pt-4 pl-1 " style="height:50px;width: 160px;left:0px;bottom: 0px;font-size: 12px; color: #fff; ">
+																583.5万追番
+															</span>
+				                                    </div>
+				                                    <div class=" d-flex flex-column " style="width: 160px; ">
+				                                        <span class="w-75 ">
+																<a href="# "style="font-size:14px; ">因为太怕同就全点了防御力</a>
+															</span>
+				                                        <span class=" ">
+																<a href="# "class="text-black-50 "
+																 style="font-size:smaller; ">全12话
+																 </a>
+															</span>
+				                                    </div>
+				                                </div>
+				                                <div class="col ">
+				                                    <div class="position-relative " style="color: white; ">
+				                                        <span class="position-absolute text-center align-items-center " style="left:100px;width:60px;height: 24px;font-size: 12px;line-height: 24px;border-radius:4px; background-color: rgb(0, 192, 255); ">
+																独家
+															</span>
+				                                        <a href="# "><img src="img/zy15.jpg " class="img-fluid " style="width:160px;height: 214px; "/></a>
+				                                        <span class="position-absolute pt-4 pl-1 " style="height:50px;width: 160px;left:0px;bottom: 0px;font-size: 12px; color: #fff; ">
+																580.5万追番
+															</span>
+				                                    </div>
+				                                    <div class="d-flex flex-column ">
+				                                        <span class=" ">
+																<a href="# "style="font-size:14px; ">转生成蜘蛛又怎样！</a>
+															</span>
+				                                        <span class=" ">
+																<a href="# "class="text-black-50 "
+																 style="font-size:smaller; ">全24话
+																 </a>
+															</span>
+				                                    </div>
+				                                </div>
+				                            </div>
+				                            <!--第四行内容-->
+				                            <div class="d-flex row mb-3 " id="list ">
+				                                <div class="col ">
+				                                    <div class="position-relative " style="color: white; ">
+				                                        <span class="position-absolute text-center align-items-center " style="left:100px;width:60px;height: 24px;font-size: 12px;line-height: 24px;border-radius:4px; background-color: rgb(0, 192, 255); ">
+																独家
+															</span>
+				                                        <a href="# "><img src="img/zy16.jpg "  class="img-fluid " style="width:160px;height: 214px; "/></a>
+				                                        <span class="position-absolute pt-4 pl-1 " style="height:50px;width: 160px;left:0px;bottom: 0px;font-size: 12px; color: #fff; ">
+																564.7万追番
+															</span>
+				                                    </div>
+				                                    <div class=" d-flex flex-column p-0 m-0 " >
+				                                        <span class="w-75 ">
+																<a href="# "style="font-size:14px; ">夏目友人帐 唤石者与怪异的访客</a>
+															</span>
+				                                        <span class=" ">
+																<a href="# "class="text-black-50 "
+																 style="font-size:smaller; ">全1话
+																 </a>
+															</span>
+				                                    </div>
+				                                </div>
+				                                <div class="col ">
+				                                    <div class="position-relative " style="color: white; ">
+				                                        <span class="position-absolute text-center align-items-center " style="left:100px;width:60px;height: 24px;font-size: 12px;line-height: 24px;border-radius:4px; background-color: rgb(0, 192, 255); ">
+																独家
+															</span>
+				                                        <a href="#"><img src="img/zy17.jpg "  class="img-fluid " style="width:160px;height: 214px; "/></a>
+				                                        <span class="position-absolute pt-4 pl-1 " style="height:50px;width: 160px;left:0px;bottom: 0px;font-size: 12px; color: #fff; ">
+																557.5万追番
+															</span>
+				                                    </div>
+				                                    <div class=" d-flex flex-column ">
+				                                        <span class="w-75 ">
+																<a href="# "style="font-size:14px; ">在下坂本，有何贵干？</a>
+															</span>
+				                                        <span class=" ">
+																<a href="# "class="text-black-50 "
+																 style="font-size:smaller; ">全13话
+																 </a>
+															</span>
+				                                    </div>
+				                                </div>
+				                                <div class="col ">
+				                                    <div class="position-relative " style="color: white; ">
+				                                        <span class="position-absolute text-center align-items-center "
+				                                        	 style="left:100px;width:60px;height: 24px;font-size: 12px;line-height: 24px;border-radius:4px;background-color: rgb(251, 114, 153); ">
+																会员专享
+															</span>
+				                                        <a href="# "><img src="img/zy18.jpg "  class="img-fluid " style="width:160px;height: 214px; "/></a>
+				                                        <span class="position-absolute pt-4 pl-1 " style="height:50px;width: 160px;left:0px;bottom: 0px;font-size: 12px; color: #fff; ">
+																537.4万追番
+															</span>
+				                                    </div>
+				                                    <div class=" d-flex flex-column " >
+				                                        <span class="w-75 ">
+																<a href="# " style="font-size:14px; ">我的青春恋爱物语果然有问题。完</a>
+															</span>
+				                                        <span class=" ">
+																<a href="# "class="text-black-50 "
+																 style="font-size:smaller; ">全12话
+																 </a>
+															</span>
+				                                    </div>
+				                                </div>
+				                                <div class="col ">
+				                                    <div class="position-relative " style="color: white; ">
+				                                        <span class="position-absolute text-center align-items-center " style="left:100px;width:60px;height: 24px;font-size: 12px;line-height: 24px;border-radius:4px; background-color: rgb(0, 192, 255); ">
+																独家
+															</span>
+				                                        <a href="# "><img src="img/zy19.jpg "  class="img-fluid " style="width:160px;height: 214px; "/></a>
+				                                        <span class="position-absolute pt-4 pl-1 " style="height:50px;width: 160px;left:0px;bottom: 0px;font-size: 12px; color: #fff; ">
+																536.8万追番
+															</span>
+				                                    </div>
+				                                    <div class=" d-flex flex-column ">
+				                                        <span class=" ">
+																<a href="# "style="font-size:14px; ">徒然喜欢你</a>
+															</span>
+				                                        <span class=" ">
+																<a href="# "class="text-black-50 "
+																 style="font-size:smaller; ">全12话
+																 </a>
+															</span>
+				                                    </div>
+				                                </div>
+				                                <div class="col ">
+				                                    <div class="position-relative " style="color: white; ">
+				                                        <span class="position-absolute text-center align-items-center " style="left:100px;width:60px;height: 24px;font-size: 12px;line-height: 24px;border-radius:4px; background-color: rgb(0, 192, 255); ">
+																独家
+															</span>
+				                                        <a href="# "><img src="img/zy20.jpg "  class="img-fluid " style="width:160px;height: 214px; "/></a>
+				                                        <span class="position-absolute pt-4 pl-1 " style="height:50px;width: 160px;left:0px;bottom: 0px;font-size: 12px; color: #fff; ">
+																532.2万追番
+															</span>
+				                                    </div>
+				                                    <div class=" d-flex flex-column ">
+				                                        <span class=" ">
+																<a href="# "style="font-size:14px; ">OVERLORD III</a>
+															</span>
+				                                        <span class=" ">
+																<a href="# "class="text-black-50 "
+																 style="font-size:smaller; ">全13话
+																 </a>
+															</span>
+				                                    </div>
+				                                </div>
+				                            </div>
+				                            <!--第五行内容-->
+				                            <div class="d-flex row mb-3 " id="list ">
+	                                <div class="col ">
+	                                    <div class="position-relative " style="color: white; ">
+	                                        <span class="position-absolute text-center align-items-center " style="left:100px;width:60px;height: 24px;font-size: 12px;line-height: 24px;border-radius:4px; background-color: rgb(0, 192, 255); ">
+													独家
+												</span>
+	                                        <a href="#"><img src="img/zy21.jpg " class="img-fluid " style="width:160px;height: 214px; "/></a>
+	                                        <span class="position-absolute pt-4 pl-1 " style="height:50px;width: 160px;left:0px;bottom: 0px;font-size: 12px; color: #fff; ">
+													520万追番
+												</span>
+	                                    </div>
+	                                    <div class=" d-flex flex-column ">
+	                                        <span class=" ">
+													<a href="# "style="font-size:14px; ">OVERLORD II</a>
+												</span>
+	                                        <span class=" ">
+													<a href="# "class="text-black-50 "
+													 style="font-size:smaller; ">全13话
+													 </a>
+												</span>
+	                                    </div>
+	                                </div>
+	                                		<div class="col ">
+	                                    <div class="position-relative " style="color: white; ">
+	                                        <span class="position-absolute text-center align-items-center " style="left:100px;width:60px;height: 24px;font-size: 12px;line-height: 24px;border-radius:4px;background-color: rgb(251, 114, 153) ">
+													会员专享
+												</span>
+	                                        <a href="# "><img src="img/zy22.jpg "  class="img-fluid " style="width:160px;height: 214px; "/></a>
+	                                        <span class="position-absolute pt-4 pl-1 " style="height:50px;width: 160px;left:0px;bottom: 0px;font-size: 12px; color: #fff; ">
+													512.6万追番
+												</span>
+	                                    </div>
+	                                    <div class=" d-flex flex-column ">
+	                                        <span class="w-75 ">
+													<a href="# "style="font-size:14px; ">刀剑神域 爱丽丝篇 异界战争</a>
+												</span>
+	                                        <span class=" ">
+													<a href="# "class="text-black-50 "
+													 style="font-size:smaller; ">全13话
+													 </a>
+												</span>
+	                                    </div>
+	                                </div>
+	                                <div class="col ">
+	                                    <div class="position-relative " style="color: white; ">
+	                                        <span class="position-absolute text-center align-items-center " style="left:100px;width:60px;height: 24px;font-size: 12px;line-height: 24px;border-radius:4px; background-color: rgb(0, 192, 255); ">
+													独家
+												</span>
+	                                        <a href="# "><img src="img/zy23.jpg "  class="img-fluid " style="width:160px;height: 214px; "/></a>
+	                                        <span class="position-absolute pt-4 pl-1 " style="height:50px;width: 160px;left:0px;bottom: 0px;font-size: 12px; color: #fff; ">
+													509.8万追番
+												</span>
+	                                    </div>
+	                                    <div class=" d-flex flex-column ">
+	                                        <span class="w-75 ">
+													<a href="# "style="font-size:14px; ">岸边露伴一动也不动</a>
+												</span>
+	                                        <span class=" ">
+													<a href="# "class="text-black-50 "
+													 style="font-size:smaller; ">全4话
+													 </a>
+												</span>
+	                                    </div>
+	                                </div>
+	                                <div class="col ">
+	                                    <div class="position-relative " style="color: white; ">
+	                                        <span class="position-absolute text-center align-items-center " style="left:100px;width:60px;height: 24px;font-size: 12px;line-height: 24px;border-radius:4px; background-color: rgb(0, 192, 255); ">
+													独家
+												</span>
+	                                        <a href="# "><img src="img/zy24.jpg " class="img-fluid " style="width:160px;height: 214px; "/></a>
+	                                        <span class="position-absolute pt-4 pl-1 " style="height:50px;width: 160px;left:0px;bottom: 0px;font-size: 12px; color: #fff; ">
+													507.5万追番
+												</span>
+	                                    </div>
+	                                    <div class=" d-flex flex-column ">
+	                                        <span class=" ">
+													<a href="# "style="font-size:14px; ">JOJO的奇妙冒险</a>
+												</span>
+	                                        <span class=" ">
+													<a href="# "class="text-black-50 "
+													 style="font-size:smaller; ">全26话
+													 </a>
+												</span>
+	                                    </div>
+	                                </div>
+	                                <div class="col ">
+	                                    <div class="position-relative " style="color: white; ">
+	                                        <span class="position-absolute text-center align-items-center " style="left:100px;width:60px;height: 24px;font-size: 12px;line-height: 24px;border-radius:4px;background-color: rgb(251, 114, 153) ">
+													限时免费
+												</span>
+	                                        <a href="# "><img src="img/zy25.jpg " class="img-fluid " style="width:160px;height: 214px; "/></a>
+	                                        <span class="position-absolute pt-4 pl-1 " style="height:50px;width: 160px;left:0px;bottom: 0px;font-size: 12px; color: #fff; ">
+													507.1万追番
+												</span>
+	                                    </div>
+	                                    <div class=" d-flex flex-column ">
+	                                        <span class="w-75 ">
+													<a href="# "style="font-size:14px; ">某科学的超电磁炮</a>
+												</span>
+	                                        <span class=" ">
+													<a href="# "class="text-black-50 "
+													 style="font-size:smaller; ">全24话
+													 </a>
+												</span>
+	                                    </div>
+	                                </div>
+	                            </div>
+	                        			</div>
+										</div>
+									<div class="carousel-item ">
+										3
+									</div>
+									<div class="carousel-item ">
+										4
+									</div>
+								</div>
+							</div>                        
+                    	</div>
+	                    <!--第二个页面 -->
+	                    <div class="tab-pane container " id="menu1">2</div>
+	                    <!-- 第三个页面 -->
+	                    <div class="tab-pane container " id="menu2">3</div>
+	                    <!-- 第四个页面 -->
+	                    <div class="tab-pane container " id="menu3">4</div>
+	                    <!-- 第五个页面 -->
+	                    <div class="tab-pane container " id="menu4">5</div>
+                	</div>
+	                <!--页面底部角码-->
+	                <div class="container d-flex justify-content-center mt-5 ">
+                    <div class="mx-auto d-flex ">
+                    	<ul class="pagination">
+                    		<li class="page-item">
+                    			<a href="#dyy"class="page-link text-black-50 "data-slide="prev">上一页</a>
+                    		</li>
+                    		<li class="page-item ">
+                    			<a class="page-link active "data-target="#dyy" data-slide-to="0">1</a>
+                    		</li>
+                    		<li class="page-item ">
+                    			<a class="page-link "data-target="#dyy" data-slide-to="1">2</a>
+                    		</li>
+                    		<li class="page-item ">
+                    			<a class="page-link "data-target="#dyy" data-slide-to="2">3</a>
+                    		</li>
+                    		<li class="page-item ">
+                    			<a class="page-link "data-target="#dyy" data-slide-to="3">4</a>
+                    		</li>
+                    		<li class="page-item ">
+                    			<a class="page-link ">...</a>
+                    		</li>
+                    		<li class="page-item">
+                    			<a href="#dyy" class="page-link text-black-50 "data-slide="next">下一页</a>
+                    		</li>
+                    	</ul>
+                    </div>
+                </div>
+            	</div>
+        	</div>
+	        <!--根部部分-->
+	        <div class="foot container-fluid mt-4 bg-light ">
+            <div class="row mx-auto container p-3 ">
+                <div class="col-4 ">
+                    <div class=" " style="color: black !important; ">
+                        <span class=" small text-black-50 ">缘叶二次元</span>
+                        <div class="d-flex mt-2 small ">
+                            <ul class="navbar-nav mr-4 ">
+                                <li class="nav-item ">
+                                    <a class="nav-link " href="# ">关于我们</a>
+                                </li>
+                                <li class="nav-item ">
+                                    <a class="nav-link " href="# ">联系我们</a>
+                                </li>
+                                <li class="nav-item ">
+                                    <a class="nav-link " href="# ">用户协议</a>
+                                </li>
+                                <li class="nav-item ">
+                                    <a class="nav-link " href="# ">加入我们</a>
+                                </li>
+                            </ul>
+                            <ul class="navbar-nav ">
+                                <li class="nav-item ">
+                                    <a class="nav-link " href="# ">友情链接</a>
+                                </li>
+                                <li class="nav-item ">
+                                    <a class="nav-link " href="# ">隐私政策</a>
+                                </li>
+                                <li class="nav-item ">
+                                    <a class="nav-link " href="# ">bilibili认证</a>
+                                </li>
+                                <li class="nav-item ">
+                                    <a class="nav-link " href="# ">lnvestor</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4 ">
+                    <div class=" ">
+                        <span class=" small text-black-50 ">传送门</span>
+                        <div class="d-flex mt-2 small ">
+                            <ul class="navbar-nav mr-4 ">
+                                <li class="nav-item] ">
+                                    <a class="nav-link " href="# ">协议汇总</a>
+                                </li>
+                                <li class="nav-item ">
+                                    <a class="nav-link " href="# ">活动中心</a>
+                                </li>
+                                <li class="nav-item ">
+                                    <a class="nav-link " href="# ">活动专题页</a>
+                                </li>
+                                <li class="nav-item ">
+                                    <a class="nav-link " href="# ">侵权申诉</a>
+                                </li>
+                            </ul>
+                            <ul class="navbar-nav mr-4 ">
+                                <li class="nav-item ">
+                                    <a class="nav-link " href="# ">帮助中心</a>
+                                </li>
+                                <li class="nav-item ">
+                                    <a class="nav-link " href="# ">用户反馈论坛</a>
+                                </li>
+                                <li class="nav-item ">
+                                    <a class="nav-link " href="# ">壁纸站</a>
+                                </li>
+                                <li class="nav-item ">
+                                    <a class="nav-link " href="# ">广告合作</a>
+                                </li>
+                            </ul>
+                            <ul class="navbar-nav ">
+                                <li class="nav-item ">
+                                    <a class="nav-link " href="# ">名人堂</a>
+                                </li>
+                                <li class="nav-item ">
+                                    <a class="nav-link " href="# ">MCN管理中心</a>
+                                </li>
+                                <li class="nav-item ">
+                                    <a class="nav-link " href="# ">高级弹幕</a>
+                                </li>
+                                <li class="nav-item ">
+                                    <a class="nav-link " href="# ">品牌号官网</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col ">
+                    <div class="container-fluid d-flex flex-column text-center mx-auto ">
+                        <div class="mx-auto ">
+                            <img src="img/2.jpg " class="img-thumbnail " style="width: 150px; " />
+                        </div>
+
+                        <span class="mt-2 text-black-50 font-italic ">扫一扫<span class="small p-2 ">关注我们</span></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    	</div>
+	</body>
+<script src="js/jquery-3.6.0.min.js "></script>
+<script src="js/bootstrap.bundle.js "></script>
+<script>
+	 $('#dyy').carousel({
+    	interval:0
+    })
+</script>
+</html>

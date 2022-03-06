@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>个人中心</title>
+		<link rel="stylesheet" href="css/bootstrap.css" />
+		<link rel="stylesheet" href="font/bootstrap-icons.css" />
+		<style>
+			.bian li a:hover {
+				background-color: #717171;
+				color: white !important;
+			}
+			#nav li a{
+        	font-family:collegiate-normal;
+        }
+        #nav li a:hover{
+        	color:deepskyblue !important;
+        }
+		</style>
+	</head>
+
+	<body>
+		<div>
+			<!--导航栏部分-->
+			<nav class="navbar navbar-expand-lg bg-secondary">
+				<div class=" mr-4 ">
+					<a href="#" class="shadow rounded"><img src="img/logo.jpg" style="width:200px;height: 60px;" /></a>
+				</div>
+
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+						<span class="bi-activity"></span>
+					</button>
+				<div class="collapse navbar-collapse" id="collapsibleNavbar">
+					<ul class="navbar-nav ml-5 mr-auto w-100"id="nav">
+						<li class="nav-item mr-3">
+							<a class="nav-link text-white" href="index.html"><i class="bi-house"></i>首页 </a>
+						</li>
+						<li class="nav-item mr-3 dropdown">
+							<a class="nav-link text-white" data-toggle="dropdown" href="#">动漫资源</a>
+							<div class="dropdown-menu">
+								<a class="dropdown-item" href="source.html">番剧索引</a>
+								<a class="dropdown-item" href="#">连载动画</a>
+								<a class="dropdown-item" href="#">完结动画</a>
+								<a class="dropdown-item" href="#">资讯</a>
+							</div>
+						</li>
+						<li class="nav-item mr-3 dropdown">
+							<a class="nav-link text-white" data-toggle="dropdown" href="#">动漫人物</a>
+							<div class="dropdown-menu">
+								<a class="dropdown-item" href="#">Link 1</a>
+								<a class="dropdown-item" href="#">Link 2</a>
+								<a class="dropdown-item" href="#">Link 3</a>
+							</div>
+						</li>
+						<li class="nav-item dropdown">
+							<a class="nav-link text-white" data-toggle="dropdown" href="#">动漫制作</a>
+							<div class="dropdown-menu">
+								<a class="dropdown-item" href="#">Link 1</a>
+								<a class="dropdown-item" href="#">Link 2</a>
+								<a class="dropdown-item" href="#">Link 3</a>
+							</div>
+						</li>
+					
+						<li class="nav-item ml-auto">
+							<a class="nav-link text-white" href="#" data-toggle="modal" data-target="#myModal">登录</a>
+						</li>
+						<div class="modal fade " id="myModal">
+								<div class="modal-dialog d-none d-lg-block">
+									<div class="modal-content">
+										<!-- 模态框主体 -->
+										<div class="px-3">
+											<button type="button" class="close " data-dismiss="modal">&times;</button>
+										</div>
+										<div class="modal-body w-75 mx-auto">
+											<!-- Nav tabs -->
+											<div>
+												<ul class="nav nav-tabs">
+													<li class="nav-item">
+														<a class="nav-link active" data-toggle="tab"
+															href="#home1">账号登陆</a>
+													</li>
+													<li class="nav-item">
+														<a class="nav-link" data-toggle="tab" href="#home2">短信登陆</a>
+													</li>
+												</ul>
+											</div>
+											<!-- Tab panes -->
+											<div class="tab-content" style="height:150px;">
+												<div class="tab-pane active" id="home1">
+													<form class="mt-3">
+														<div class="form-group pb-3">
+															<input type="text" class="form-control"
+																placeholder="账号/用户名/邮箱" />
+														</div>
+														<div class="form-group pb-3 position-relative">
+															<input type="password" class="form-control"
+																placeholder="密码" />
+															<a class="position-absolute" href="#"
+																style="top: 50px;left: 240px;">忘记密码？</a>
+														</div>
+
+													</form>
+												</div>
+												<div class="tab-pane" id="home2">
+													<form class="mt-3">
+														<div class="input-group pb-4">
+															<div class="input-group-prepend">
+																<select class="form-control">
+																	<option>中国大陆</option>
+																	<option>欧美</option>
+																	<option>俄罗斯</option>
+																	<option>意大利</option>
+																	<option>澳大利亚</option>
+																</select>
+															</div>
+															<input type="text" class="form-control" placeholder="手机号">
+														</div>
+														<div class="input-group pb-3">
+															<input type="text" class="form-control" placeholder="验证码">
+															<div class="input-group-append">
+																<span class="input-group-text">发送验证码</span>
+															</div>
+														</div>
+													</form>
+												</div>
+											</div>
+										</div>
+										<div class="modal-footer justify-content-between">
+											<div>
+												<a href="" class="mr-lg-1 text-black-50 small">
+													<img src="https://passport.baidu.com/passApi/img/bd-acc-qzone.png"
+														style="width: 30px;height: 30px;" />
+													qq登录
+												</a>
+												<a href="" class="text-black-50 small">
+													<img src="https://passport.baidu.com/passApi/img/bd-acc-weixin.png"
+														style="width: 30px;height: 30px;" />
+													微信login
+												</a>
+											</div>
+											<div class="d-flex justify-content-between">
+												<button type="submit"
+													class="btn btn-primary form-control mr-1">登录</button>
+												<button class="btn btn-secondary form-control "
+													data-dismiss="modal">关闭</button>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						<li class="nav-item ">
+							<a class="nav-link text-white " href="# " data-toggle="tooltip " data-placement="bottom " title="欢迎加入我们！ ">注册 </a>
+						</li>
+						<li class="nav-item ">
+							<a class="nav-link font-size-3">关于<i class="bi-question-circle-fill "></i></a>
+						</li>
+						<li class="nav-item mx-3">
+                        	<button class=" btn bg-info w-100 text-white px-4">投稿</button>
+                        </li>
+					</ul>
+				</div>
+			</nav>
+		</div>
+		<div class="container-fluid mt-2">
+			<img src="img/aa.jpg" class="img-fluid w-100" style="height: 150px;" />
+		</div>
+		<div class="container  mt-2">
+			<div class="row shadow">
+				<!--左侧部分-->
+				<div class="col-2 m-0 p-0 bg-light">
+					<!-- 垂直导航栏 -->
+					<nav class="navbar bg-light  m-0 p-0 border">
+						<!-- Links -->
+						<ul class="navbar-nav bian m-0 p-0 w-100 text-center">
+							<li class="nav-item">
+								<span class="d-flex justify-content-center align-content-center 
+					         	text-black-50 border-bottom p-2" style="font-size: large;">
+					         	个人中心
+					         </span>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link text-dark p-3 pt-1" href="#"><i class="bi-house-door-fill"></i>主页</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link text-dark p-3" href="#"><i class="bi-chat-text"></i>我的信息</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link text-dark p-3" href="#"><i class="bi-badge-3d"></i>大会员</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link text-dark p-3" href="#"><i class="bi-bank"></i>会员积分</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link text-dark p-3" href="#"><i class="bi-lock"></i>账号安全</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link text-dark p-3" href="#"><i class="bi-clock-history"></i>记录</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link text-dark p-3" href="#"><i class="bi-card-checklist"></i>实名认证</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link text-dark p-3 border-bottom" href="#"><i class="bi-emoji-angry-fill"></i>黑名单管理</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link text-dark p-3 border-bottom" href="#">个人空间<i class="bi-chevron-compact-right"></i></a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link text-dark p-3 border-bottom" href="#">我的钱包<i class="bi-chevron-compact-right"></i></a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link text-dark p-3 border-bottom" href="#">创作中心<i class="bi-chevron-compact-right"></i></a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link text-dark p-3 border-bottom" href="#">直播中心<i class="bi-chevron-compact-right"></i></a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+				<!--右侧部分-->
+				<div class="col-10">
+					<div class="d-flex container-fluid py-5 border-bottom">
+						<div class="d-flex w-100">
+							<img src="img/1.jpg" class="img-fluid" / style="width: 80px;height: 80px;border-radius: 50%;">
+							<div class="ml-3 w-100">
+								<span class="d-flex mb-2">
+								<span style="font-family: 'arial black'; font-size: large;font-weight:1000;">秋寂time</span>
+								<span class="d-flex ml-3 border text-black-50 p-0 m-0" style="font-size: smaller;">正式会员</span>
+								</span>
+								<div class="d-flex justify-content-between ">
+									<span class="d-flex">
+									<div class="progress" style="height:20px;width: 50px;">
+								      <div class="progress-bar bg-warning" style="width:100%; color: white;">Lv5</div>
+								 	</div>
+									<div class="progress" style="height:20px;width: 300px;">
+								      <div class="progress-bar bg-warning" style="width:70%;"></div>
+									</div>
+							    </span>
+									<div class="d-flex justify-content-end ml-5">
+										<span class="d-flex ml-3 border text-black-50 p-0 m-0" style="font-size: smaller;">修改资料</span>
+										<span class="d-flex ml-3 border text-black-50 p-0 m-0" style="font-size: smaller;">个人空间></span>
+									</div>
+								</div>
+								<div class="mt-1">
+									<span class="d-flex"><a href="" class="mr-5">B币：0</a><a href="">普通币:250</a></span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="d-flex container-fluid py-5 border-bottom">
+						<div class="w-100">
+							<span class="d-flex mb-3">
+							<h4 class="d-flex align-items-center">
+								<i class="bi-coin mr-2" style="color: green;font-size:xx-large;"></i>
+								每日奖励
+							</h4>
+						</span>
+							<div class="d-flex row text-center justify-content-center">
+								<div class="d-flex flex-column col-3">
+									<img src="img/e1.png" class="rounded-circle img-fluid mx-auto" / style="width: 100px;height: 100px;">
+									<span class="d-flex mt-2 mx-auto">每日登录</span>
+									<span class="d-flex mt-2 mx-auto text-black-50" style="font-size: smaller;">完成</span>
+								</div>
+								<div class="d-flex flex-column  col-3">
+									<img src="img/e2.png" class="rounded-circle img-fluid mx-auto" /style="width: 100px;height: 100px;">
+									<span class="d-flex mt-2 mx-auto">每日观看视频</span>
+									<span class="d-flex mt-2 mx-auto text-black-50" style="font-size: smaller;">未完成</span>
+								</div>
+								<div class="d-flex flex-column  col-3">
+									<img src="img/e3.png" class="rounded-circle img-fluid mx-auto" /style="width: 100px;height: 100px;">
+									<span class="d-flex mt-2 mx-auto">每日投币</span>
+									<span class="d-flex mt-2 mx-auto text-black-50" style="font-size: smaller;">已获得0/50</span>
+								</div>
+								<div class="d-flex flex-column  col-3">
+									<img src="img/e4.png" class="rounded-circle img-fluid mx-auto" /style="width: 100px;height: 100px;">
+									<span class="d-flex mt-2 mx-auto">每日分享视频(客户端)</span>
+									<span class="d-flex mt-2 mx-auto text-black-50" style="font-size: smaller;">未完成</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="d-flex container-fluid py-5 border-bottom">
+						<div class="w-100">
+							<span class="d-flex mb-3 justify-content-between">
+							<h4 class="d-flex align-items-center">
+								<i class="bi-shield-lock-fill mr-2" style="color: blue;font-size:xx-large;"></i>
+								账户安全
+							</h4>
+							<span class="d-flex border rounded "style="font-size: small;height: 24px;">
+								<a href="#"class="text-black-50 text-center" style="text-decoration: none;">更多账户安全></a>
+							</span>
+							</span>
+							<div class="">
+								<div class="row p-2">
+									<div class="col d-flex align-items-center">
+										<div class="d-flex text-center">
+											<span class=" rounded-circle" style="width: 70px;height: 70px;background-color: lightskyblue;">
+											<i class="bi-chat-left-dots-fill text-white rounded-circle text-center"
+												style="font-size: -webkit-xxx-large;"></i>
+										</span>
+										</div>
+										<div class="d-flex flex-column ml-3">
+											<span class="font-weight-bolder p-1">我的邮箱</span>
+											<span class="text-black-50  p-1" style="font-size: smaller;">绑定邮箱后即可使用邮箱登录</span>
+											<span>
+											<button class="border-0"style="font-size: small;border-radius: 5px;background-color: #e5e9ef;color:#abb4c1;">已认证</button>
+											<span><a href="#">更改邮箱></a></span>
+											</span>
+										</div>
+									</div>
+									<div class="col d-flex align-items-center">
+										<div class="d-flex text-center">
+											<span class=" rounded-circle" style="width: 70px;height: 70px;background-color: lightskyblue;">
+											<i class="bi-phone text-white rounded-circle text-center"
+												style="font-size: -webkit-xxx-large;"></i>
+										</span>
+										</div>
+										<div class="d-flex flex-column ml-3">
+											<span class="font-weight-bolder p-1">我的手机</span>
+											<span class="text-black-50  p-1" style="font-size: smaller;">绑定手机后即可使用手机号登录</span>
+											<span>
+											<button class="btn-danger border-0"style="font-size: small;border-radius: 5px;background-color: #e5e9ef;color:#abb4c1;">已绑定</button>
+											<span><a href="#">更改手机></a></span>
+											</span>
+										</div>
+									</div>
+								</div>
+								<div class="row p-2 pt-4">
+									<div class="col d-flex align-items-center">
+										<div class="d-flex text-center">
+											<span class=" rounded-circle" style="width: 70px;height: 70px;background-color: lightskyblue;">
+											<i class="bi-question-square text-white rounded-circle text-center"
+												style="font-size: -webkit-xxx-large;"></i>
+										</span>
+										</div>
+										<div class="d-flex flex-column ml-3">
+											<span class="font-weight-bolder p-1">我的密保</span>
+											<span class="text-black-50  p-1" style="font-size: smaller;">设置密保，账号更安全</span>
+											<span>
+											<button class="btn-danger border-0"style="font-size: small;border-radius: 5px;background-color: #e5e9ef;color:#abb4c1;">已设置</button>
+											<span><a href="#">查看并设置></a></span>
+											</span>
+										</div>
+									</div>
+									<div class="col d-flex align-items-center">
+										<div class="d-flex text-center">
+											<span class=" rounded-circle" style="width: 70px;height: 70px;background-color: lightskyblue;">
+											<i class="bi-credit-card-2-front text-white rounded-circle text-center"
+												style="font-size: -webkit-xxx-large;"></i>
+										</span>
+										</div>
+										<div class="d-flex flex-column ml-3">
+											<span class="font-weight-bolder p-1">首次实名认证，获得50经验值</span>
+											<span class="text-black-50  p-1" style="font-size: smaller;">实名认证成功后，可享受开通直播间等服务</span>
+											<span>
+											<button class="border-0 text-white"style="font-size: small;background-color: lightskyblue;border-radius: 5px;">去认证</button>	
+										</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--根部部分-->
+		<div class="foot container-fluid bg-white mt-5">
+			<div class="row mx-auto container p-3">
+				<div class="col-4">
+					<div class="" style="color: black !important;">
+						<span class=" small text-black-50">缘叶二次元</span>
+						<div class="d-flex mt-2 small">
+							<ul class="navbar-nav mr-4">
+								<li class="nav-item">
+									<a class="nav-link" href="#">关于我们</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="#">联系我们</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="#">用户协议</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="#">加入我们</a>
+								</li>
+							</ul>
+							<ul class="navbar-nav">
+								<li class="nav-item">
+									<a class="nav-link" href="#">友情链接</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="#">隐私政策</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="#">bilibili认证</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="#">lnvestor</a>
+								</li>
+							</ul>
+						</div>
+
+					</div>
+				</div>
+				<div class="col-4">
+					<div class="">
+						<span class=" small text-black-50">传送门</span>
+						<div class="d-flex  mt-2 small">
+							<ul class="navbar-nav mr-4">
+								<li class="nav-item]">
+									<a class="nav-link" href="#">协议汇总</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="#">活动中心</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="#">活动专题页</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="#">侵权申诉</a>
+								</li>
+							</ul>
+							<ul class="navbar-nav mr-4">
+								<li class="nav-item">
+									<a class="nav-link" href="#">帮助中心</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="#">用户反馈论坛</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="#">壁纸站</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="#">广告合作</a>
+								</li>
+							</ul>
+							<ul class="navbar-nav">
+								<li class="nav-item">
+									<a class="nav-link" href="#">名人堂</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="#">MCN管理中心</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="#">高级弹幕</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="#">品牌号官网</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="col">
+					<div class="container-fluid d-flex flex-column text-center mx-auto">
+						<div class="mx-auto">
+							<img src="img/2.jpg" class="img-thumbnail" style="width: 150px;" />
+						</div>
+
+						<span class="mt-2 text-black-50 font-italic">扫一扫<span class="small p-2">关注我们</span></span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script src="js/jquery-3.6.0.min.js "></script>
+	<script src="js/bootstrap.bundle.js "></script>
+
+</html>
